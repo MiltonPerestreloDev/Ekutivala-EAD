@@ -42,9 +42,7 @@ O Ekutivala EAD é uma solução moderna e escalável para educação online, de
 ### Backend
 - **.NET 8.0**: Latest .NET framework for high performance
 - **ASP.NET Core MVC**: Modern web framework for building APIs and web apps
-- **Entity Framework Core**: ORM for database operations
 - **MySQL**: Relational database for data persistence
-- **AutoMapper**: Object-to-object mapping library
 
 ### Frontend
 - **HTML5/CSS3/JavaScript**: Modern web standards
@@ -77,34 +75,20 @@ cd Ekutivala-EAD
 ### 2. Configuração do Banco de Dados
 ```sql
 -- Crie o banco de dados MySQL
-CREATE DATABASE ekutivala_ead;
-
--- Configure a connection string no appsettings.json
+CREATE DATABASE dbekutivala;
 ```
 
-### 3. Configurar Connection String
-Edite o arquivo `appsettings.json`:
 
-```json
-{
-  "ConnectionStrings": {
-    "DefaultConnection": "Server=localhost;Database=ekutivala_ead;Uid=your_username;Pwd=your_password;"
-  }
-}
-```
-
-### 4. Restaurar Dependências
+### 3. Restaurar Dependências
 ```bash
 dotnet restore
 ```
 
-### 5. Compilar e Executar
+### 4. Compilar e Executar
 ```bash
 dotnet build
 dotnet run
 ```
-
-A aplicação estará disponível em `https://localhost:7123`
 
 ## 📁 Estrutura do Projeto
 
@@ -150,84 +134,7 @@ Ekutivala_EAD/
 3. **Gerenciar Estudantes**: Visualize e gerencie usuários
 4. **Relatórios**: Acesse relatórios de vendas e progresso
 
-## 🎨 Screenshots
 
-*(Adicione aqui screenshots da sua aplicação)*
-
-### Dashboard Principal
-![Dashboard](screenshots/dashboard.png)
-
-### Lista de Cursos
-![Cursos](screenshots/courses.png)
-
-### Painel do Estudante
-![Student Panel](screenshots/student-panel.png)
-
-## 🔧 Configuração Avançada
-
-### Variáveis de Ambiente
-Configure as seguintes variáveis de ambiente para produção:
-
-```bash
-ASPNETCORE_ENVIRONMENT=Production
-ConnectionStrings__DefaultConnection=your_production_connection_string
-```
-
-### Deploy em Produção
-```bash
-dotnet publish -c Release -o ./publish
-```
-
-## 📊 API Endpoints
-
-### Gestão de Cursos
-- `GET /api/cursos` - Listar todos os cursos
-- `GET /api/cursos/{id}` - Obter detalhes do curso
-- `POST /api/cursos` - Criar novo curso
-- `PUT /api/cursos/{id}` - Atualizar curso
-- `DELETE /api/cursos/{id}` - Remover curso
-
-### Gestão de Estudantes
-- `GET /api/estudantes` - Listar estudantes
-- `POST /api/estudantes` - Registrar estudante
-- `GET /api/estudantes/{id}/cursos` - Cursos do estudante
-
-## 🧪 Testes
-
-Execute os testes unitários:
-
-```bash
-dotnet test
-```
-
-## 📈 Performance e Monitoramento
-
-- **Logging**: Configurado com Serilog para structured logging
-- **Health Checks**: Endpoints `/health` para monitoramento
-- **Performance**: Optimizado com caching e lazy loading
-- **Security**: Implementado com Identity e Authorization policies
-
-## 🔐 Segurança
-
-- **Autenticação**: ASP.NET Core Identity
-- **Autorização**: Role-based access control
-- **Anti-CSRF**: Proteção contra ataques CSRF
-- **SQL Injection**: Parameterized queries
-- **XSS Protection**: Content Security Policy
-
-## 🤝 Como Contribuir
-
-1. **Fork** o repositório
-2. **Crie** uma branch para sua feature (`git checkout -b feature/NovaFuncionalidade`)
-3. **Commit** suas mudanças (`git commit -m 'Add: Nova funcionalidade'`)
-4. **Push** para a branch (`git push origin feature/NovaFuncionalidade`)
-5. **Abra** um Pull Request
-
-### Guidelines de Contribuição
-- Siga o código style existente
-- Adicione testes para novas funcionalidades
-- Atualize a documentação conforme necessário
-- Use commit messages semânticos
 
 ## 📝 Licença
 
@@ -237,7 +144,7 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICE
 
 **Milton Perestrelo**
 - GitHub: [@MiltonPerestreloDev](https://github.com/MiltonPerestreloDev)
-- Email: [seu-email@exemplo.com](mailto:seu-email@exemplo.com)
+- Email: [perestrelo1000ton@gmail.com](mailto:perestrelo1000ton@gmail.com)
 
 ## 🙏 Agradecimentos
 
@@ -248,7 +155,7 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICE
 
 ## 📞 Suporte
 
-Para suporte, envie um email para suporte@ekutivala.com ou abra uma [issue](https://github.com/MiltonPerestreloDev/Ekutivala-EAD/issues) no GitHub.
+Para suporte, envie um email para ekutivalasuporte@gmail.comm ou abra uma [issue](https://github.com/MiltonPerestreloDev/Ekutivala-EAD/issues) no GitHub.
 
 ---
 

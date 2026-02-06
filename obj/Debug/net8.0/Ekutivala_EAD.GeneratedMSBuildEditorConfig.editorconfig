@@ -19,281 +19,281 @@ build_property.TargetFrameworkIdentifier = .NETCoreApp
 build_property.TargetFrameworkVersion = v8.0
 build_property.RootNamespace = Ekutivala_EAD
 build_property.RootNamespace = Ekutivala_EAD
-build_property.ProjectDir = C:\Users\admin\source\repos\Ekutivala_EAD+WebSiteMaruLoor\Ekutivala_EAD\
+build_property.ProjectDir = C:\Users\admin\Downloads\FevEkutivalaGit\EkutivalaOpen\Ekutivala_EAD\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\admin\source\repos\Ekutivala_EAD+WebSiteMaruLoor\Ekutivala_EAD
+build_property.MSBuildProjectDirectory = C:\Users\admin\Downloads\FevEkutivalaGit\EkutivalaOpen\Ekutivala_EAD
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Estudante/ComprarCurso.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Estudante/ComprarCurso.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRhbnRlXENvbXByYXJDdXJzby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Estudante/CursoGratuito.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Estudante/CursoGratuito.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRhbnRlXEN1cnNvR3JhdHVpdG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Estudante/DetalhesCursos.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Estudante/DetalhesCursos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRhbnRlXERldGFsaGVzQ3Vyc29zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Estudante/DetalhesCursos_Cinematografia.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Estudante/DetalhesCursos_Cinematografia.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRhbnRlXERldGFsaGVzQ3Vyc29zX0NpbmVtYXRvZ3JhZmlhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Estudante/DetalhesCursos_InglesM01.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Estudante/DetalhesCursos_InglesM01.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRhbnRlXERldGFsaGVzQ3Vyc29zX0luZ2xlc00wMS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Estudante/Index.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Estudante/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRhbnRlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Estudante/ListaBaseAulas.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Estudante/ListaBaseAulas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRhbnRlXExpc3RhQmFzZUF1bGFzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Estudante/ListaMeusCursos.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Estudante/ListaMeusCursos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRhbnRlXExpc3RhTWV1c0N1cnNvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Estudante/ListaNotificacao.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Estudante/ListaNotificacao.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRhbnRlXExpc3RhTm90aWZpY2FjYW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Estudante/PagarExpress.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Estudante/PagarExpress.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRhbnRlXFBhZ2FyRXhwcmVzcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Estudante/PagarReferencia.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Estudante/PagarReferencia.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRhbnRlXFBhZ2FyUmVmZXJlbmNpYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Estudante/PagarTransferencia.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Estudante/PagarTransferencia.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRhbnRlXFBhZ2FyVHJhbnNmZXJlbmNpYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Estudante/Perfil.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Estudante/Perfil.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRhbnRlXFBlcmZpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Estudante/VendaCursoSucesso.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Estudante/VendaCursoSucesso.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRhbnRlXFZlbmRhQ3Vyc29TdWNlc3NvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Files1/Cadastrar_Arquivo.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Files1/Cadastrar_Arquivo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsZXMxXENhZGFzdHJhcl9BcnF1aXZvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Files1/Cadastrar_Funcionario.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Files1/Cadastrar_Funcionario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsZXMxXENhZGFzdHJhcl9GdW5jaW9uYXJpby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Files1/Editar_Arquivo.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Files1/Editar_Arquivo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsZXMxXEVkaXRhcl9BcnF1aXZvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Files1/Editar_Estudante.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Files1/Editar_Estudante.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsZXMxXEVkaXRhcl9Fc3R1ZGFudGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Files1/Editar_Funcionario.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Files1/Editar_Funcionario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsZXMxXEVkaXRhcl9GdW5jaW9uYXJpby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Files1/Editar_VendaCurso.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Files1/Editar_VendaCurso.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsZXMxXEVkaXRhcl9WZW5kYUN1cnNvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Files1/Editar_VendaLivro.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Files1/Editar_VendaLivro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsZXMxXEVkaXRhcl9WZW5kYUxpdnJvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Files1/Index.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Files1/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsZXMxXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Files1/Index_Upload.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Files1/Index_Upload.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsZXMxXEluZGV4X1VwbG9hZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Files1/Listar_Arquivos.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Files1/Listar_Arquivos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsZXMxXExpc3Rhcl9BcnF1aXZvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Files1/Listar_Estudantes.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Files1/Listar_Estudantes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsZXMxXExpc3Rhcl9Fc3R1ZGFudGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Files1/Listar_Funcionarios.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Files1/Listar_Funcionarios.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsZXMxXExpc3Rhcl9GdW5jaW9uYXJpb3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Files1/Listar_VendasCursos.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Files1/Listar_VendasCursos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsZXMxXExpc3Rhcl9WZW5kYXNDdXJzb3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Files1/Listar_VendasLivros.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Files1/Listar_VendasLivros.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsZXMxXExpc3Rhcl9WZW5kYXNMaXZyb3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Files1/Login_func.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Files1/Login_func.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsZXMxXExvZ2luX2Z1bmMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Files1/UploadCapa.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Files1/UploadCapa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsZXMxXFVwbG9hZENhcGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Home/Biblioteca.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Home/Biblioteca.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCaWJsaW90ZWNhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Home/BibliotecaFisica.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Home/BibliotecaFisica.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCaWJsaW90ZWNhRmlzaWNhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Home/BibliotecaPDF.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Home/BibliotecaPDF.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCaWJsaW90ZWNhUERGLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Home/Cadastrar.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Home/Cadastrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYWRhc3RyYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Home/Comissao.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Home/Comissao.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb21pc3Nhby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Home/ComprarLivro.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Home/ComprarLivro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb21wcmFyTGl2cm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Home/Contactos.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Home/Contactos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0b3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Home/Cursos.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Home/Cursos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDdXJzb3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Home/DetalhesLivro.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Home/DetalhesLivro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhbGhlc0xpdnJvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Home/Index.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Home/LivroGratuito.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Home/LivroGratuito.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMaXZyb0dyYXR1aXRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Home/Login.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Home/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Home/PagarExpress.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Home/PagarExpress.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQYWdhckV4cHJlc3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Home/PagarReferencia.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Home/PagarReferencia.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQYWdhclJlZmVyZW5jaWEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Home/PagarTransferencia.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Home/PagarTransferencia.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQYWdhclRyYW5zZmVyZW5jaWEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Home/Politicas.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Home/Politicas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQb2xpdGljYXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Home/Prof01.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Home/Prof01.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9mMDEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Home/Prof02.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Home/Prof02.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9mMDIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Home/Prof03.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Home/Prof03.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9mMDMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Home/Prof04.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Home/Prof04.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9mMDQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Home/Prof05.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Home/Prof05.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9mMDUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Home/Prof06.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Home/Prof06.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9mMDYuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Home/Prof07.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Home/Prof07.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9mMDcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Home/Prof09.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Home/Prof09.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9mMDkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Home/Prof10.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Home/Prof10.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9mMTAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Home/Prof11.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Home/Prof11.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9mMTEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Home/Termo.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Home/Termo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUZXJtby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Home/VendaLivroSucesso.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Home/VendaLivroSucesso.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWZW5kYUxpdnJvU3VjZXNzby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Shared/Error.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Shared/_Dashboard_Layout.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Shared/_Dashboard_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9EYXNoYm9hcmRfTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Shared/_LayoutBase.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Shared/_LayoutBase.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRCYXNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Shared/_LayoutBasePagar.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Shared/_LayoutBasePagar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRCYXNlUGFnYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Shared/_LayoutEstudante.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Shared/_LayoutEstudante.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRFc3R1ZGFudGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/_ViewImports.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/_ViewStart.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/Ekutivala_EAD+WebSiteMaruLoor/Ekutivala_EAD/Views/Shared/_Layout.cshtml]
+[C:/Users/admin/Downloads/FevEkutivalaGit/EkutivalaOpen/Ekutivala_EAD/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-jy3ji8sc4y
