@@ -1,0 +1,106 @@
+@model IEnumerable<EstudanteModel>
+@using Microsoft.AspNetCore.Http;
+
+@{
+    ViewData["Title"] = "Ekutivala";
+    ViewContext.RouteData.Values["action"] = "Index";
+    Layout = "_Dashboard_Layout";
+
+    
+}
+
+<main>
+    <div class="container-fluid px-4">
+        <h1 class="mt-4">Estudantes</h1>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-users me-1"></i>
+                Lista de Estudantes
+            </div>
+            <div class="card-body">
+                <table id="Estudante" class="table table-striped table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>E-mail</th>
+                            <th>Telefone</th>
+                            <th>Status</th>
+                            <th>Cidade</th>
+                            <th>Data Cadastro</th>
+                            <th>Operações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var estudante in Model)
+                        {
+                            <tr>
+                                <td>@estudante.IdEstudante</td>
+                                <td>@estudante.Nome</td>
+                                <td>@estudante.Email</td>
+                                <td>@estudante.Telefone</td>
+                                <td>
+                                    <span class="badge 
+                                        @(estudante.Status == "ATIVO" ? "bg-success" : 
+                                          estudante.Status == "INATIVO" ? "bg-secondary" : 
+                                          "bg-danger")">
+                                        @estudante.Status
+                                    </span>
+                                </td>
+                                <td>@estudante.Cidade</td>
+                                <td>@estudante.DataCadastro.ToString("dd/MM/yyyy HH:mm")</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <a asp-action="Editar_Estudante" asp-route-id="@estudante.IdEstudante" 
+                                            class="btn btn-sm btn-warning">
+                                            <i class="fas fa-edit"></i> Editar
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+@section Scripts {
+    <script>
+        $(document).ready(function (){
+            $('#Estudante').DataTable({
+                "language": {
+                    "emptyTable": "Nenhum estudante cadastrado",
+                    "lengthMenu": "_MENU_ resultados por página",
+                    "info": "Mostrando _START_ até _END_ de _TOTAL_ estudantes",
+                    "infoEmpty": "Mostrando 0 até 0 de 0 estudantes",
+                    "infoFiltered": "(Filtrados de _MAX_ estudantes)",
+                    "infoPostFix": "",
+                    "infoThousands": ".",
+                    "loadingRecords": "Carregando...",
+                    "processing": "Processando...",
+                    "zeroRecords": "Nenhum estudante encontrado",
+                    "search": "Pesquisar:",
+                    "paginate": {
+                        "next": "Próximo",
+                        "previous": "Anterior",
+                        "first": "Primeiro",
+                        "last": "Último"
+                    },
+                    "aria": {
+                        "sortAscending": "Ordenar coluna ascendente",
+                        "sortDescending": "Ordenar coluna descendente"
+                    }
+                },
+                "columnDefs": [
+                    { "orderable": false, "targets": [6] } // Desabilita ordenação na coluna de operações
+                ],
+                "order": [[5, "desc"]] // Ordena por data de cadastro (decrescente)
+            });
+        });
+    </script>
+
+}

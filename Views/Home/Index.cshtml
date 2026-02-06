@@ -1,0 +1,683 @@
+﻿@{
+    ViewData["Title"] = "";
+    Layout = "_LayoutBase";
+}
+    <!-- Header 
+    ============================================= -->
+    <header>
+        <!-- Start Navigation -->
+        <nav class="navbar mobile-sidenav navbar-sticky navbar-default validnavs navbar-fixed dark no-background">
+
+            <div class="container d-flex justify-content-between align-items-center">
+
+
+                <div class="navbar-brand-left">
+                    <!-- Start Header Navigation -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" >
+                        <img src="assets/img/Logotipo-Principal.png" class="logo" alt="Logo">
+                        </a>
+                    </div>
+                    <!-- End Header Navigation -->
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+
+                    <img src="assets/img/logo.png" alt="Logo" style="width: 70%;">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-times"></i>
+                    </button>
+
+                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li>
+                            <a asp-area="" asp-controller="Home" asp-action="Index" class="active">Home</a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="Home" asp-action="Cursos">Cursos</a>
+                        </li>
+                        <li class="dropdown megamenu-fw">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Professores</a>
+                            <ul class="dropdown-menu megamenu-content" role="menu">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-menu col-md-3">
+                                            <h6 class="title">Inglês</h6>
+                                            <div class="content">
+                                                <ul class="menu-col">
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof06">Faustino Chingueve</a></li>
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof07">Paulo Bingue</a></li>
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof02">Justino Essuvo</a></li>
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof01">Sebasitão de Oliveira</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                         <!-- end col-3 -->
+                                        <div class="col-menu col-md-2">
+                                            <h6 class="title">Francês</h6>
+                                            <div class="content">
+                                                <ul class="menu-col">
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof05">Armando Baptista</a></li>
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof11">Mujinja Pombo</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- end col-3 -->
+                                        <div class="col-menu col-md-2">
+                                            <h6 class="title">Umbundu</h6>
+                                            <div class="content">
+                                                <ul class="menu-col"> 
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof10">Patrício Kavela</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- end col-3 -->
+                                        <div class="col-menu col-md-2">
+                                            <h6 class="title">Coreano</h6>
+                                            <div class="content">
+                                                <ul class="menu-col">
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof09">Joiza Victor</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- end col-3 -->
+                                        <div class="col-menu col-md-2">
+                                            <h6 class="title">Espanhol</h6>
+                                            <div class="content">
+                                                <ul class="menu-col">
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof03">Surenka Quiosa</a></li>
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof04">Ricardo Gonçalves</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- end col-3 -->
+                                    </div>
+                                    <!-- end row -->
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="Home" asp-action="Comissao" class="">Comissão Executiva</a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="Home" asp-action="Biblioteca" class="">Biblioteca</a>
+                        </li>
+                       
+                        <li>
+                            <a asp-area="" asp-controller="Home" asp-action="Contactos">Contacto</a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="btn text-end dropdown-toggle entrar-btn" data-toggle="dropdown" href="#">
+                                <i class="fas fa-user"></i> Entrar
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a asp-area="" asp-controller="Home" asp-action="Login">Login</a></li>
+                                <li><a asp-area="" asp-controller="Home" asp-action="Cadastrar">Cadastrar-se</a></li>
+                            </ul>
+                        </li>
+
+                        
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+
+                <!-- Main Nav -->
+            </div>
+            <!-- Overlay screen for menu -->
+            <div class="overlay-screen"></div>
+            <!-- End Overlay screen for menu -->
+
+        </nav>
+        <!-- End Navigation -->
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Banner 
+    ============================================= -->
+    <div class="banner-area standard text-default bg-gray-hard pb-5">
+
+        <div class="item">
+            <div class="box-table">
+                <div class="box-cell">
+                    <div class="container">
+                        <div class="row item-flex center">
+
+                            <div class="col-lg-6">
+                                <div class="content-box">
+                                    <h1>Encontre o curso ideal e expanda suas oportunidades</h1>
+                                    <a class="btn btn-primary mt-3" asp-area="" asp-controller="Home" asp-action="Cadastrar">Cadastre-se</a>
+                                    <form action="#">
+                                        <select class="form-control" name="idioma" id="idioma-select" onchange="redirecionarCurso()">
+                                            <option disabled selected>Qual área deseja aprender?</option>
+                                            <option value="idiomas">Idiomas</option>
+                                            <option value="ciencias">Ciências</option>
+                                            <option value="engenharia">Engenharia</option>
+                                            <option value="gastronomia">Gastronomia</option>
+                                            <option value="tecnologia">Tecnologia</option>
+                                            <option value="negocios">Negócios</option>
+                                        </select>
+                                        <button type="submit"><i class="fas fa-search"></i></button>
+                                    </form>
+                                </div>
+
+
+
+                            </div>
+                            <div class="col-lg-6 thumb">
+                                <img src="assets/img/about/7.jpg" alt="Thumb">
+                                <img src="assets/img/about/6.png" alt="Thumb">
+                                <div class="join">
+                                    <img src="assets/img/favicon/favicon-96x96.png" width="44%" alt="logo">
+                                    <div class="fun-fact">
+                                        + De <h4 class="timer" data-to="10" data-speed="2000"></h4>
+                                        <span class="medium">Cursos Online</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Banner -->
+
+    <!-- Start What Learn
+    ============================================= -->
+    <div class="what-learn-area bg-dark default-padding">
+        <div class="container">
+            <div class="content-box">
+                <div class="row">
+
+                    <div class="col-lg-5 info text-light">
+                        <h2>Aprenda idiomas e amplie suas oportunidades</h2>
+                        <p>
+                            A Ekutivala é um projeto acadêmico-social que promove o aprendizado de idiomas, com foco no inglês, 
+                            preparando estudantes universitários para o mercado de trabalho global. Oferecemos uma abordagem dinâmica 
+                            e interativa para garantir o máximo aproveitamento.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-7 categories">
+                        <div class="row">
+                            <!-- Visão -->
+                            <div class="col-lg-4 col-md-4 single-item">
+                                <div class="item">
+                                    <a href="#">
+                                        <i class="fas fa-eye"></i>
+                                        <div class="info">
+                                            <h4>Visão</h4>
+                                            <span>Ser referência no ensino de idiomas, promovendo a empregabilidade.</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End Visão -->
+                            
+                            <!-- Valores -->
+                            <div class="col-lg-4 col-md-4 single-item">
+                                <div class="item">
+                                    <a href="#">
+                                        <i class="fas fa-hand-holding-heart"></i>
+                                        <div class="info">
+                                            <h4>Valores</h4>
+                                            <span>Compromisso com a educação, acessibilidade e excelência no ensino.</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End Valores -->
+                            
+                            <!-- Missão -->
+                            <div class="col-lg-4 col-md-4 single-item">
+                                <div class="item">
+                                    <a href="#">
+                                        <i class="fas fa-graduation-cap"></i>
+                                        <div class="info">
+                                            <h4>Missão</h4>
+                                            <span>Capacitar estudantes através do multilinguismo, conectando-os ao mundo.</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End Missão -->
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End What Learn -->
+
+        <!-- Start Top Categories 
+    ============================================= -->
+    <div id="top-categories" class="top-cat-area default-padding bottom-less">
+        <div class="container">
+            <div class="row">
+                <div class="site-heading text-center">
+                    <div class="col-lg-8 offset-lg-2">
+                        <h2>Nossos Cursos</h2>
+                        <p>
+                            Na Ekutivala, oferecemos cursos de idiomas focados na comunicação eficaz e no desenvolvimento acadêmico e profissional. Escolha o seu idioma e expanda suas oportunidades!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="top-cat-items">
+                <div class="row">
+                    <!-- Inglês -->
+                    <div class="col-xl-4 col-lg-4 col-md-6 equal-height">
+                        <div class="item" style="background-image: url(assets/img/category/c1.png);">
+                            <a href="#">
+                                <i class="flaticon-education"></i>
+                                <div class="info">
+                                    <h4>Inglês</h4>
+                                    <span style="text-transform: none;">O idioma universal para negócios, tecnologia e comunicação global.</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Francês -->
+                    <div class="col-xl-4 col-lg-4 col-md-6 equal-height">
+                        <div class="item" style="background-image: url(assets/img/category/c3.png);">
+                            <a href="#">
+                                <i class="flaticon-university-campus"></i>
+                                <div class="info">
+                                    <h4>Francês</h4>
+                                    <span style="text-transform: none;">Aprimore seu francês para viagens, estudos e negócios internacionais.</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Umbundu -->
+                    <div class="col-xl-4 col-lg-4 col-md-6 equal-height">
+                        <div class="item" style="background-image: url(assets/img/category/c6.png);">
+                            <a href="#">
+                                <i class="flaticon-translator"></i>
+                                <div class="info">
+                                    <h4>Umbundu</h4>
+                                    <span style="text-transform: none;">Valorize a cultura e o idioma angolano com nosso curso interativo.</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Italiano -->
+                    <div class="col-xl-4 col-lg-4 col-md-6 equal-height">
+                        <div class="item" style="background-image: url(assets/img/category/c2.png);">
+                            <a href="#">
+                                <i class="flaticon-book"></i>
+                                <div class="info">
+                                    <h4>Italiano</h4>
+                                    <span style="text-transform: none;">Explore a cultura e o idioma italiano para estudos e turismo.</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Coreano -->
+                    <div class="col-xl-4 col-lg-4 col-md-6 equal-height">
+                        <div class="item" style="background-image: url(assets/img/category/c4.png);">
+                            <a href="#">
+                                <i class="flaticon-translate"></i>
+                                <div class="info">
+                                    <h4>Coreano</h4>
+                                    <span style="text-transform: none;">Aprenda a língua e a cultura coreana para expandir suas possibilidades.</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Espanhol -->
+                    <div class="col-xl-4 col-lg-4 col-md-6 equal-height">
+                        <div class="item" style="background-image: url(assets/img/category/c5.png);">
+                            <a href="#">
+                                <i class="flaticon-education"></i>
+                                <div class="info">
+                                    <h4>Espanhol</h4>
+                                    <span style="text-transform: none;">Domine um dos idiomas mais falados do mundo e amplie sua rede global.</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- End Top Categories -->
+
+    <!-- Start Advisor Area
+    ============================================= -->
+    <section id="advisor" class="advisor-area bg-gray circle default-padding">
+        <div class="container">
+            <div class="row">
+                <div class="site-heading text-center">
+                    <div class="col-lg-8 offset-lg-2">
+                        <h2>Professores Experientes e Metodologias Inovadoras</h2>
+                        <p>
+                            Nossa equipe de professores é composta por profissionais altamente qualificados, comprometidos em oferecer um ensino dinâmico e eficaz.  
+                            Com metodologias inovadoras, eles proporcionam uma experiência de aprendizado envolvente, incentivando a participação ativa dos alunos.  
+                            Através de técnicas modernas e uma abordagem interativa, nossos docentes garantem que cada estudante desenvolva suas habilidades de forma eficaz e confiante.  
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="advisor-carousel owl-carousel owl-theme text-center text-light">
+                        
+                        <div class="advisor-item">
+                            <div class="info-box">
+                                <img src="assets/img/prof/5.jpg" alt="Faustino Chingueve"
+                                        style=" height: 500px;">
+                                <div class="info-title">
+                                    <h4>Faustino Chingueve</h4>
+                                    <span>Professor de Inglês</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="advisor-item">
+                            <div class="info-box">
+                                <img src="assets/img/prof/7.jpg" alt="Joiza Victor"
+                                        style=" height: 500px;">
+                                <div class="info-title">
+                                    <h4>Joiza Victor</h4>
+                                    <span>Professora de Coreano</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="advisor-item">
+                            <div class="info-box">
+                                <img src="assets/img/prof/9.jpg" alt="Justino Essuvo"
+                                        style=" height: 500px;">
+                                <div class="info-title">
+                                    <h4>Justino Essuvo</h4>
+                                    <span>Professor de Inglês</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="advisor-item">
+                            <div class="info-box">
+                                <img src="assets/img/prof/11.jpg" alt="Patrício Kavela"
+                                        style=" height: 500px;">
+                                <div class="info-title">
+                                    <h4>Patrício Kavela</h4>
+                                    <span>Professor de Umbundu</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="advisor-item">
+                            <div class="info-box">
+                                <img src="assets/img/prof/12.jpg" alt="Paulo Bingue"
+                                        style=" height: 500px;">
+                                <div class="info-title">
+                                    <h4>Paulo Bingue</h4>
+                                    <span>Professor de Inglês</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="advisor-item">
+                            <div class="info-box">
+                                <img src="assets/img/prof/3.jpg" alt="Armando Baptista"
+                                        style=" height: 500px;">
+                                <div class="info-title">
+                                    <h4>Armando Baptista</h4>
+                                    <span>Professor de Francês</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="advisor-item">
+                            <div class="info-box">
+                                <img src="assets/img/prof/14.jpg" alt="Sebastião de Oliveira"
+                                        style=" height: 500px;">
+                                <div class="info-title">
+                                    <h4>Sebastião de Oliveira</h4>
+                                    <span>Professor de Inglês</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="advisor-item">
+                            <div class="info-box">
+                                <img src="assets/img/prof/16.jpg" alt="Surenka Quiosa"
+                                        style=" height: 500px;">
+                                <div class="info-title">
+                                    <h4>Surenka Quiosa</h4>
+                                    <span>Professora de Espanhol</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="advisor-item">
+                            <div class="info-box">
+                                <img src="assets/img/prof/20.jpg" alt="Mujinja Pombo"
+                                        style=" height: 500px;">
+                                <div class="info-title">
+                                    <h4>Mujinja Pombo</h4>
+                                    <span>Professora de Francês</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="advisor-item">
+                            <div class="info-box">
+                                <img src="assets/img/prof/30.jpg" alt="Ricardo Gonçalves"
+                                        style=" height: 500px;">
+                                <div class="info-title">
+                                    <h4>Ricardo Gonçalves</h4>
+                                    <span>Professor de Espanhol</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Duplicando -->
+                            <div class="advisor-item">
+                                <div class="info-box">
+                                    <img src="assets/img/prof/5.jpg" alt="Faustino Chingueve"
+                                            style=" height: 500px;">
+                                    <div class="info-title">
+                                        <h4>Faustino Chingueve</h4>
+                                        <span>Professor de Inglês</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="advisor-item">
+                                <div class="info-box">
+                                    <img src="assets/img/prof/7.jpg" alt="Joiza Victor"
+                                            style=" height: 500px;">
+                                    <div class="info-title">
+                                        <h4>Joiza Victor</h4>
+                                        <span>Professora de Coreano</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="advisor-item">
+                                <div class="info-box">
+                                    <img src="assets/img/prof/9.jpg" alt="Justino Essuvo"
+                                            style=" height: 500px;">
+                                    <div class="info-title">
+                                        <h4>Justino Essuvo</h4>
+                                        <span>Professor de Inglês</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="advisor-item">
+                                <div class="info-box">
+                                    <img src="assets/img/prof/11.jpg" alt="Patrício Kavela"
+                                            style=" height: 500px;">
+                                    <div class="info-title">
+                                        <h4>Patrício Kavela</h4>
+                                        <span>Professor de Umbundu</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="advisor-item">
+                                <div class="info-box">
+                                    <img src="assets/img/prof/12.jpg" alt="Paulo Bingue"
+                                            style=" height: 500px;">
+                                    <div class="info-title">
+                                        <h4>Paulo Bingue</h4>
+                                        <span>Professor de Inglês</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="advisor-item">
+                                <div class="info-box">
+                                    <img src="assets/img/prof/3.jpg" alt="Armando Baptista"
+                                            style=" height: 500px;">
+                                    <div class="info-title">
+                                        <h4>Armando Baptista</h4>
+                                        <span>Professor de Francês</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="advisor-item">
+                                <div class="info-box">
+                                    <img src="assets/img/prof/14.jpg" alt="Sebastião de Oliveira"
+                                            style=" height: 500px;">
+                                    <div class="info-title">
+                                        <h4>Sebastião de Oliveira</h4>
+                                        <span>Professor de Inglês</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="advisor-item">
+                                <div class="info-box">
+                                    <img src="assets/img/prof/16.jpg" alt="Surenka Quiosa"
+                                            style=" height: 500px;">
+                                    <div class="info-title">
+                                        <h4>Surenka Quiosa</h4>
+                                        <span>Professora de Espanhol</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="advisor-item">
+                                <div class="info-box">
+                                    <img src="assets/img/prof/20.jpg" alt="Mujinja Pombo"
+                                            style=" height: 500px;">
+                                    <div class="info-title">
+                                        <h4>Mujinja Pombo</h4>
+                                        <span>Professora de Francês</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="advisor-item">
+                                <div class="info-box">
+                                    <img src="assets/img/prof/30.jpg" alt="Ricardo Gonçalves"
+                                            style=" height: 500px;">
+                                    <div class="info-title">
+                                        <h4>Ricardo Gonçalves</h4>
+                                        <span>Professor de Espanhol</span>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Advisor Area -->
+
+        <!-- Start Fun Factor 
+    ============================================= -->
+    <div class="fun-factor-area default-padding bottom-less text-center bg-fixed shadow dark-hard" style="background-image: url(assets/img/banner/10.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 item">
+                    <div class="fun-fact">
+                        <div class="icon">
+                            <i class="flaticon-university-campus"></i>
+                        </div>
+                        <div class="info">
+                            <span class="timer" data-to="2" data-speed="700"></span>
+                            <span class="medium">Instituições Parceiras</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 item">
+                    <div class="fun-fact">
+                        <div class="icon">
+                            <i class="flaticon-professor"></i>
+                        </div>
+                        <div class="info">
+                            <span class="timer" data-to="12" data-speed="700"></span>
+                            <span class="medium">Professores á tua disposição</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 item">
+                    <div class="fun-fact">
+                        <div class="icon">
+                            <i class="flaticon-education"></i>
+                        </div>
+                        <div class="info">
+                            <span class="timer" data-to="45" data-speed="700"></span>
+                            <span class="medium">Estudantes Inscritos</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 item">
+                    <div class="fun-fact">
+                        <div class="icon">
+                            <i class="flaticon-books"></i>
+                        </div>
+                        <div class="info">
+                            <span class="timer" data-to="6" data-speed="700"></span>
+                            <span class="medium">Cursos Disponíveis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Fun Factor -->
+
+    <!-- Start Registration 
+    ============================================= -->
+    <div id="register" class="reg-area default-padding-top bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="reg-items">
+                    <div class="col-lg-6 reg-form default-padding-bottom">
+                        <div class="site-heading text-left">
+                            <h2>Cadastrar-se Gratuitamente na Ekutivala</h2>
+                            <p>
+                                Faça parte da nossa comunidade acadêmica! Cadastre-se gratuitamente e tenha acesso a diversas instituições, cursos e professores qualificados, prontos para ajudá-lo a alcançar seus objetivos educacionais.
+                            </p>
+
+                        </div>
+                        <div class="col-lg-12">
+                            <a class="btn" style="border: #0049fd solid; border-radius: 20px;" asp-area="" asp-controller="Home" asp-action="Cadastrar">
+                                Cadastrar-se
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 thumb">
+                        <img src="assets/img/contacto.png" alt="Thumb">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Registration -->

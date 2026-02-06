@@ -1,0 +1,220 @@
+﻿@using Microsoft.AspNetCore.Http;
+@model VendaCursoModel;
+@{
+    ViewData["Title"] = "";
+    Layout = "_LayoutEstudante";
+
+    var telefone = Context.Session.GetString("telefone");
+    var morada = Context.Session.GetString("morada");
+    var nacionalidade = Context.Session.GetString("nacionalidade");
+
+    var statusVenda = ViewBag.StatusVenda as string;
+    var idCurso = ViewBag.IdCurso as int?;
+
+    bool dadosCompletos = !string.IsNullOrEmpty(telefone) && telefone != "null"
+                       && !string.IsNullOrEmpty(morada) && morada != "null"
+                       && !string.IsNullOrEmpty(nacionalidade) && nacionalidade != "null";
+
+}
+<div class="section section-padding mt-n10">
+    <div class="container">
+        <div class="row gx-10">
+            <div class="col-lg-8">
+
+                <!-- Courses Details Start -->
+                <div class="courses-details">
+
+                   <!-- Courses Video Container Start -->
+                    <div class="vidcontainer-base">
+                        <iframe 
+                            src="https://www.youtube.com/embed/nlwvT88kTiM" 
+                            title="Como se apresentar em Inglês? - CursoemVideo de Inglês: Módulo 1" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+
+                    <!-- Courses Video Container End -->
+
+                    <h2 class="title">Curso de Cinematografia - Modulo 01</h2>
+
+                    <div class="courses-details-admin">
+                        <div class="admin-author">
+                            <div class="author-thumb">
+                                <img src="~/assets/img/prof/5.jpg" alt="Faustino Chingueve">
+                            </div>
+                            <div class="author-content">
+                                <a class="name" href="#">Faustino Chingueve</a>
+                            </div>
+                        </div>
+                        <div class="admin-rating">
+                            <span class="rating-count">4.9</span>
+                            <span class="rating-star">
+                                    <span class="rating-bar" style="width: 80%;"></span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="courses-details-tab">
+
+                    <!-- Details Tab Menu Start -->
+                    <div class="details-tab-menu">
+                        <ul class="nav justify-content-center">
+                            <li><button class="active" data-bs-toggle="tab" data-bs-target="#description">Descrição</button></li>
+                            <li><button data-bs-toggle="tab" data-bs-target="#instructors">Professor</button></li>
+                        </ul>
+                    </div>
+                    <!-- Details Tab Menu End -->
+
+                    <!-- Details Tab Content Start -->
+                    <div class="details-tab-content">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="description">
+
+                                <!-- Tab Description Start -->
+                                <div class="tab-description">
+                                    <div class="description-wrapper">
+                                        <h3 class="tab-title">Description:</h3>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularsed in the 1960 with release containing Lorem Ipsum passages desktop publishing software.</p>
+                                    </div>
+                                    <div class="description-wrapper">
+                                        <h3 class="tab-title">Curriculum:</h3>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularsed in the 1960 with release containing Lorem Ipsum passages desktop publishing software.</p>
+                                    </div>
+                                    <div class="description-wrapper">
+                                        <h3 class="tab-title">Certification:</h3>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularsed in the 1960 with release containing Lorem Ipsum passages desktop publishing software.</p>
+                                    </div>
+                                </div>
+                                <!-- Tab Description End -->
+
+                            </div>
+                            <div class="tab-pane fade" id="instructors">
+
+                                <!-- Tab Instructors Start -->
+                                <div class="tab-instructors">
+                                    <h3 class="tab-title">Professor do Curso:</h3>
+
+                                    <div class="row">
+                                        <div class="col-md-3 col-6">
+                                            <!-- Single Team Start -->
+                                            <div class="single-team">
+                                                <div class="team-thumb">
+                                                    <img src="~/assets/img/prof/5.jpg" alt="Faustino Chingueve">
+                                                </div>
+                                                <div class="team-content">
+                                                    <div class="rating">
+                                                        <span class="count">4.9</span>
+                                                        <i class="icofont-star"></i>
+                                                    </div>
+                                                    <h4 class="name">Faustino Chingueve</h4>
+                                                    <span class="designation">Professor de Inglês</span>
+                                                </div>
+                                            </div>
+                                            <!-- Single Team End -->
+                                        </div>
+                                    </div>
+
+                                    <div class="row gx-10">
+                                        <div class="col-lg-10">
+                                            <div class="tab-rating-content">
+                                                <h3 class="tab-title">Sobre o Professor:</h3>
+                                                <p>Faustino Manuel Chingueve é um apaixonado professor de Inglês com experiência no ensino de idiomas. Nascido e criado em Angola, possui um profundo conhecimento da língua e cultura anglófona.</p>
+                                                <p>Concluiu um curso de Inglês pela Embaixada Americana e é certificado em Teaching English as a Foreign Language (TEFL). Além disso, possui formação em Teacher Training e Pedagogia e atualmente é universitário em Gestão Financeira. Além da atuação como professor, é empresário, unindo sua paixão pelo ensino ao mundo dos negócios.</p>
+                                                <p> Ao longo de sua carreira, tem se dedicado a ajudar estudantes de diferentes níveis a desenvolverem suas habilidades linguísticas. Com uma abordagem dinâmica e interativa, utiliza métodos inovadores e recursos multimídia para tornar as aulas envolventes e eficazes. Sua dedicação ao sucesso dos alunos faz dele um professor comprometido e inspirador.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Tab Instructors End -->
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Details Tab Content End -->
+
+                </div>
+
+                </div>
+                <!-- Courses Details End -->
+
+            </div>
+            <div class="col-lg-4">
+                <!-- Courses Details Sidebar Start -->
+                <div class="sidebar">
+
+                   <!-- Sidebar Widget Information Start -->
+                    <div class="sidebar-widget widget-information">
+                        <div class="info-price">
+                            <span class="price">Gratuito</span>
+                        </div>
+                        <div class="info-list">
+                            <ul>
+                                <li><i class="icofont-man-in-glasses"></i> <strong>Professor</strong> <span>Faustino Chingueve</span></li>
+                                <li><i class="icofont-clock-time"></i> <strong>Duração</strong> <span>02h 15min</span></li>
+                                <li><i class="icofont-ui-video-play"></i> <strong>Aulas</strong> <span>5</span></li>
+                                <li><i class="icofont-bars"></i> <strong>Nível</strong> <span>Iniciante</span></li>
+                                <li><i class="icofont-book-alt"></i> <strong>Idioma</strong> <span>Inglês</span></li>
+                                <li><i class="icofont-certificate-alt-1"></i> <strong>Certificado</strong> <span>Sim</span></li>
+                            </ul>
+                        </div>
+                        <div class="info-btn">
+                            @if (statusVenda != null)
+                            {
+                                @if (statusVenda.Equals("Pendente", StringComparison.OrdinalIgnoreCase))
+                                {
+                                    <button class="btn btn-warning btn-hover-dark" disabled>
+                                        <i class="icofont-clock-time"></i> Processando
+                                    </button>
+                                    <small class="d-block mt-2 text-muted">A incrição está em processamento</small>
+                                }
+                                else if (statusVenda.Equals("Aprovada", StringComparison.OrdinalIgnoreCase))
+                                {
+                                    <a asp-action="ListaMeusCursos" class="btn btn-success btn-hover-dark">
+                                        <i class="icofont-check"></i> Ver Curso
+                                    </a>
+                                }
+                                else if (statusVenda.Equals("Cancelada", StringComparison.OrdinalIgnoreCase))
+                                {
+                                    <a asp-action="ComprarCurso" asp-route-idCurso="@idCurso" class="btn btn-primary btn-hover-dark">
+                                        <i class="icofont-shopping-cart"></i> Inscreva-se Agora
+                                    </a>
+                                    <small class="d-block mt-2 text-muted">A anterior foi cancelada</small>
+                                }
+                            }
+                            else
+                            {
+                                <a asp-action="ComprarCurso" asp-route-idCurso="@idCurso" class="btn btn-primary btn-hover-dark">
+                                    <i class="icofont-shopping-cart"></i> Inscreva-se Agora
+                                </a>
+                            }
+                        </div>
+                    </div>
+                    <!-- Sidebar Widget Information End -->
+
+                    <!-- Sidebar Widget Information End -->
+
+                    <!-- Sidebar Widget Share Start -->
+                    <div class="sidebar-widget">
+                        <h4 class="widget-title">Partilhar Curso:</h4>
+
+                        <ul class="social">
+                            <li><a href="#"><i class="flaticon-facebook"></i></a></li>
+                            <li><a href="#"><i class="flaticon-linkedin"></i></a></li>
+                            <li><a href="#"><i class="flaticon-twitter"></i></a></li>
+                            <li><a href="#"><i class="flaticon-skype"></i></a></li>
+                            <li><a href="#"><i class="flaticon-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- Sidebar Widget Share End -->
+
+                </div>
+                <!-- Courses Details Sidebar End -->
+            </div>
+        </div>
+    </div>
+</div>

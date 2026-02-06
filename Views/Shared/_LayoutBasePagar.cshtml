@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- ========== Page Title ========== -->
+    <title>Ekutivala - Projeto Multilingual Universitário</title>
+    <!-- ========== Meta Tags ========== -->
+    <meta name="robots" content="index, follow">  
+    <meta name="description" content="Ekutivala é um projeto académico-social que promove o multilinguismo entre estudantes universitários, com foco no inglês, facilitando o acesso ao emprego e preparando para o mercado de trabalho global.">
+    <meta name="keywords" content="multilinguismo, idiomas, inglês, estudantes universitários, emprego, mercado de trabalho, educação, Angola, Universidade Católica de Angola, Ucaniana, internacionalização, intercâmbio cultural">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta property="og:title" content="Ekutivala - Projeto Multilingual Universitário">
+    <meta property="og:description" content="Ekutivala é um projeto académico-social que promove o multilinguismo entre estudantes universitários, com foco no inglês, facilitando o acesso ao emprego e preparando para o mercado de trabalho global.">
+    <meta property="og:url" content="https://ekutivala.com/"> 
+    <meta property="og:image" content="https://ekutivala.com/assets/img/ekutivala-logo.jpg"> <meta property="og:type" content="website">
+
+    <!-- ========== Favicon ========== -->
+    <link rel="icon" type="image/png" href="~/assets/img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="~/assets/img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="~/assets/img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="~/assets/img/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="~/assets/img/favicon/site.webmanifest" />
+
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="~/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/assets/css/flaticon-set.css" rel="stylesheet" />
+    <link href="~/assets/css/elegant-icons.css" rel="stylesheet" />
+    <link href="~/assets/css/magnific-popup.css" rel="stylesheet" />
+    <link href="~/assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="~/assets/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="~/assets/css/animate.css" rel="stylesheet" />
+    <link href="~/assets/css/bootsnav.css" rel="stylesheet" />
+    <link href="~/style.css" rel="stylesheet">
+    <link href="~/assets/css/responsive.css" rel="stylesheet" />
+    <link href="~/assets/css/chat.css" rel="stylesheet" />
+    <!-- ========== End Stylesheet ========== -->
+    <style type="text/css">
+        .entrar-btn {
+            border: 1px solid #0049fd;
+            padding: 10px !important;
+            position: relative !important;
+            top: 15px;
+        }
+        #btnGerarPDF {
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        #btnGerarPDF:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        #btnGerarPDF:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+    </style>
+
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+
+</head>
+
+<body  style="background: #f9f9f9;">
+
+    <!-- Preloader Start -->
+    <div class="se-pre-con"></div>
+    <!-- Preloader Ends -->
+
+    @RenderBody()
+
+    <!-- Modal Bootstrap -->
+    <div class="modal fade" id="avisoCompra" tabindex="-1" aria-labelledby="avisoCompraLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content shadow-lg rounded-3 animated fadeInDown">
+        <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title" id="avisoCompraLabel">
+            <i class="fa fa-info-circle"></i> Atenção
+            </h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+            <p class="fs-5 text-dark">
+            Após realizar a instrução desta página, <strong>partilhe o comprovante com a nossa equipa</strong>,
+            feche esta página e volte para a página anterior para finalizar a compra.
+            </p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">
+            Entendido <i class="fa fa-check-circle"></i>
+            </button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    
+
+    <!-- jQuery Frameworks
+    ============================================= -->
+    <script src="~/assets/js/jquery-3.7.1.min.js"></script>
+    <script src="~/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="~/assets/js/jquery.appear.js"></script>
+    <script src="~/assets/js/jquery.easing.min.js"></script>
+    <script src="~/assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/assets/js/owl.carousel.min.js"></script>
+    <script src="~/assets/js/wow.min.js"></script>
+    <script src="~/assets/js/isotope.pkgd.min.js"></script>
+    <script src="~/assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="~/assets/js/count-to.js"></script>
+    <script src="~/assets/js/loopcounter.js"></script>
+    <script src="~/assets/js/jquery.nice-select.min.js"></script>
+    <script src="~/assets/js/bootsnav.js"></script>
+    <script src="~/assets/js/main.js"></script>
+    <script src="~/assets/js/chat-static.js"></script>
+    <!-- Script JavaScript -->
+    <script>
+        function redirecionarCurso() {
+            var idioma = document.getElementById("idioma-select").value;
+            if (idioma) {
+                // Redireciona para a action "Cursos" no controller "Home"
+                window.location.href = "/Home/Cursos";
+            }
+        }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const btnGerarPDF = document.getElementById('btnGerarPDF');
+        
+        btnGerarPDF.addEventListener('click', gerarPDF);
+        
+        function gerarPDF() {
+            // Mostrar loading
+            const originalText = btnGerarPDF.innerHTML;
+            btnGerarPDF.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Preparando PDF...';
+            btnGerarPDF.disabled = true;
+            
+            // Ocultar temporariamente elementos não necessários
+            const elementosOcultar = document.querySelectorAll('#btnGerarPDF, .btn-voltar');
+            elementosOcultar.forEach(el => el.style.display = 'none');
+            
+            // Elemento a ser convertido
+            const elemento = document.querySelector('.container');
+            const originalBg = elemento.style.backgroundColor;
+            elemento.style.backgroundColor = '#ffffff';
+            
+            // Configurações do PDF
+            const opcoes = {
+                margin: [10, 10, 10, 10],
+                filename: 'Guia_de_Pagamento_Ekitivala_' + '@Model.Fatura' + '.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { 
+                    scale: 2,
+                    useCORS: true,
+                    logging: false,
+                    backgroundColor: '#ffffff'
+                },
+                jsPDF: { 
+                    unit: 'mm', 
+                    format: 'a4', 
+                    orientation: 'portrait' 
+                }
+            };
+            
+            // Gerar PDF
+            html2pdf()
+                .set(opcoes)
+                .from(elemento)
+                .save()
+                .then(() => {
+                    // Restaurar elementos
+                    elementosOcultar.forEach(el => el.style.display = '');
+                    elemento.style.backgroundColor = originalBg;
+                    
+                    // Restaurar botão
+                    btnGerarPDF.innerHTML = originalText;
+                    btnGerarPDF.disabled = false;
+                    
+                    // Feedback visual
+                    mostrarFeedbackSucesso();
+                })
+                .catch(error => {
+                    console.error('Erro:', error);
+                    
+                    // Restaurar elementos em caso de erro
+                    elementosOcultar.forEach(el => el.style.display = '');
+                    elemento.style.backgroundColor = originalBg;
+                    
+                    btnGerarPDF.innerHTML = originalText;
+                    btnGerarPDF.disabled = false;
+                    
+                    mostrarFeedbackErro();
+                });
+        }
+        
+        function mostrarFeedbackSucesso() {
+            const feedback = document.createElement('div');
+            feedback.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: #28a745;
+                color: white;
+                padding: 15px;
+                border-radius: 5px;
+                z-index: 10000;
+                animation: fadeInOut 3s ease-in-out;
+            `;
+            feedback.innerHTML = '<i class="fas fa-check-circle"></i> PDF baixado com sucesso!';
+            document.body.appendChild(feedback);
+            
+            setTimeout(() => feedback.remove(), 3000);
+        }
+        
+        function mostrarFeedbackErro() {
+            alert('Erro ao gerar PDF. Por favor, tente novamente.');
+        }
+    });
+    </script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,118 @@
+/* Ícone do Chat */
+#chatIcon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #0049fd;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    z-index: 999;
+}
+
+#chatIcon:hover {
+    transform: scale(1.1);
+}
+
+/* Caixa de Chat */
+#chatBox {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    z-index: 999;
+}
+
+/* Cabeçalho do Chat */
+#chatHeader {
+    background: #0049fd;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#closeChat {
+    float: right;
+    cursor: pointer;
+}
+
+/* Área de mensagens */
+#messages {
+    max-height: 250px;
+    padding: 10px;
+    overflow-y: auto;
+    font-size: 14px;
+}
+
+/* Input de mensagem */
+.chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.chat-input button {
+    background: #0049fd;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.chat-input button:hover {
+    background: #0056b3;
+}
+
+/* Estilização do botão FAQ */
+.faq-button {
+    border: 1px solid #0049fd; 
+    background: white;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.faq-button:hover {
+    background: #0033b3;
+    color: white;
+}
+
+/* Estilização do botão Voltar */
+.back-btn {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+    background: #333; /* Cinza escuro ao passar o mouse */
+}

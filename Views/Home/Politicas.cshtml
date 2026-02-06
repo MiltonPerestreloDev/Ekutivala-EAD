@@ -1,0 +1,466 @@
+﻿@{
+    ViewData["Title"] = "";
+    Layout = "_LayoutBase";
+}
+    <!-- Header 
+    ============================================= -->
+    <header>
+        <!-- Start Navigation -->
+        <nav class="navbar mobile-sidenav inc-shape navbar-sticky navbar-default validnavs dark">
+
+            <div class="container d-flex justify-content-between align-items-center">
+
+
+                <div class="navbar-brand-left">
+                    <!-- Start Header Navigation -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" >
+                        <img src="~/assets/img/Logotipo-Principal.png" class="logo" alt="Logo">
+                        </a>
+                    </div>
+                    <!-- End Header Navigation -->
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+
+                    <img src="~/assets/img/logo.png" alt="Logo" style="width: 70%;">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-times"></i>
+                    </button>
+
+                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li>
+                            <a asp-area="" asp-controller="Home" asp-action="Index" class="active">Home</a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="Home" asp-action="Cursos">Cursos</a>
+                        </li>
+                        <li class="dropdown megamenu-fw">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Professores</a>
+                            <ul class="dropdown-menu megamenu-content" role="menu">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-menu col-md-3">
+                                            <h6 class="title">Inglês</h6>
+                                            <div class="content">
+                                                <ul class="menu-col">
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof06">Faustino Chingueve</a></li>
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof07">Paulo Bingue</a></li>
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof02">Justino Essuvo</a></li>
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof01">Sebasitão de Oliveira</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                         <!-- end col-3 -->
+                                        <div class="col-menu col-md-2">
+                                            <h6 class="title">Francês</h6>
+                                            <div class="content">
+                                                <ul class="menu-col">
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof05">Armando Baptista</a></li>
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof11">Mujinja Pombo</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- end col-3 -->
+                                        <div class="col-menu col-md-2">
+                                            <h6 class="title">Umbundu</h6>
+                                            <div class="content">
+                                                <ul class="menu-col"> 
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof10">Patrício Kavela</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- end col-3 -->
+                                        <div class="col-menu col-md-2">
+                                            <h6 class="title">Coreano</h6>
+                                            <div class="content">
+                                                <ul class="menu-col">
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof09">Joiza Victor</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- end col-3 -->
+                                        <div class="col-menu col-md-2">
+                                            <h6 class="title">Espanhol</h6>
+                                            <div class="content">
+                                                <ul class="menu-col">
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof03">Surenka Quiosa</a></li>
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof04">Ricardo Gonçalves</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- end col-3 -->
+                                    </div>
+                                    <!-- end row -->
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="Home" asp-action="Comissao" class="">Comissão Executiva</a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="Home" asp-action="Biblioteca" class="">Biblioteca</a>
+                        </li>
+                       
+                        <li>
+                            <a asp-area="" asp-controller="Home" asp-action="Contactos">Contacto</a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="btn text-end dropdown-toggle entrar-btn" data-toggle="dropdown" href="#">
+                                <i class="fas fa-user"></i> Entrar
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a asp-area="" asp-controller="Home" asp-action="Login">Login</a></li>
+                                <li><a asp-area="" asp-controller="Home" asp-action="Cadastrar">Cadastrar-se</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+
+                <!-- Main Nav -->
+            </div>
+            <!-- Overlay screen for menu -->
+            <div class="overlay-screen"></div>
+            <!-- End Overlay screen for menu -->
+
+        </nav>
+        <!-- End Navigation -->
+    </header>
+    <!-- End Header -->
+
+
+    <!-- Start Breadcrumb 
+    ============================================= -->
+    <div class="breadcrumb-area shadow dark text-center bg-fixed text-light" style="background-image: url(../assets/img/banner/11.webp);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Conheça as Nossas Políticas</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#">Página</a></li>
+                        <li class="active">Políticas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumb -->
+
+    <!-- Start Politicas 
+    ============================================= -->
+    <div class="faq-area left-sidebar course-details-area default-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 faq-content">
+                    <div class="accordion" id="faqAccordion">
+                        <h1>POLÍTICA DE PRIVACIDADE</h1>
+                        <!-- Accordion Item -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                   1. Coleta de Dados
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#faqAccordion" style="">
+                                <div class="accordion-body">
+                                    <p>
+                                         A Ekutivala coleta dados pessoais dos usuários, como nome, e-mail, número de telefone e informações acadêmicas, apenas para fins relacionados ao projeto, como inscrições em cursos, envio de materiais e comunicação.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Accordion Item -->
+
+                        <!-- Accordion Item -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    2. Uso dos Dados
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion" style="">
+                                <div class="accordion-body">
+                                    <p>
+                                        Os dados coletados serão utilizados exclusivamente para:
+                                    </p>
+                                    <ul>
+                                        <li>Inscrições em cursos e atividades do projeto;</li>
+                                        <li>Envio de informações sobre horários, materiais e eventos;</li>
+                                        <li>Comunicação com os participantes sobre atualizações do projeto;</li>
+                                        <li>Melhoria da experiência do usuário no website, incluindo a otimização da experiência do utilizador.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Accordion Item -->
+
+                        <!-- Accordion Item -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    3. Dados de Pagamento
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion" style="">
+                                <div class="accordion-body">
+                                    <p>
+                                       Para serviços pagos, a Ekutivala poderá coletar informações de pagamento, como comprovativos de transferência bancária enviados via WhatsApp. Esses dados serão utilizados apenas para confirmar o pagamento e liberar o acesso ao conteúdo pago.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Accordion Item -->
+                        <!-- Accordion Item -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingQuatro">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQuatro" aria-expanded="false" aria-controls="collapseQuatro">
+                                    4. Compartilhamento de Dados
+                                </button>
+                            </h2>
+                            <div id="collapseQuatro" class="accordion-collapse collapse" aria-labelledby="headingQuatro" data-bs-parent="#faqAccordion" style="">
+                                <div class="accordion-body">
+                                    <p>
+                                        A Ekutivala não compartilha os dados dos usuários com terceiros, exceto quando necessário para o cumprimento de obrigações legais ou com o consentimento explícito do usuário. Em caso de vazamento de dados, a Ekutivala compromete-se a notificar os usuários afetados e a tomar medidas imediatas para mitigar os danos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Accordion Item -->
+
+                        <!-- Accordion Item -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingCinco">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCinco" aria-expanded="false" aria-controls="collapseCinco">
+                                    5. Segurança dos Dados
+                                </button>
+                            </h2>
+                            <div id="collapseCinco" class="accordion-collapse collapse" aria-labelledby="headingCinco" data-bs-parent="#faqAccordion" style="">
+                                <div class="accordion-body">
+                                    <p>
+                                        A Ekutivala implementa medidas de segurança técnicas e organizacionais para proteger os dados dos usuários contra acesso não autorizado, alteração, divulgação ou destruição. Os dados são armazenados em servidores seguros e são realizados backups regulares para garantir a integridade e a disponibilidade das informações.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Accordion Item -->
+
+                        <!-- Accordion Item -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSeis">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeis" aria-expanded="false" aria-controls="collapseSeis">
+                                    6. Direitos dos Usuários
+                                </button>
+                            </h2>
+                            <div id="collapseSeis" class="accordion-collapse collapse" aria-labelledby="headingSeis" data-bs-parent="#faqAccordion" style="">
+                                <div class="accordion-body">
+                                    <p>
+                                        Os usuários têm o direito de:
+                                    </p>
+                                    <p>
+                                         <p> <strong>a)</strong> Acessar seus dados pessoais.</p>
+                                         <p> <strong>b)</strong> Solicitar a correção de dados incorretos.</p>
+                                         <p> <strong>c)</strong> Solicitar a exclusão de seus dados, exceto quando a retenção for necessária para cumprir obrigações legais.</p>
+                                         <p> <strong>d)</strong> Revogar o consentimento para o uso de seus dados a qualquer momento.</p>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Accordion Item -->
+                        <!-- Accordion Item -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSete">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSete" aria-expanded="false" aria-controls="collapseSete">
+                                    7. Cookies e Tecnologias Semelhantes
+                                </button>
+                            </h2>
+                            <div id="collapseSete" class="accordion-collapse collapse" aria-labelledby="headingSete" data-bs-parent="#faqAccordion" style="">
+                                <div class="accordion-body">
+                                    <p>
+                                        O website pode utilizar cookies para melhorar a experiência do usuário. Os cookies podem ser desativados nas configurações do navegador, mas isso pode afetar a funcionalidade do site.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Accordion Item -->
+
+                        <!-- Accordion Item -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOito">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOito" aria-expanded="false" aria-controls="collapseOito">
+                                    8. Botão de Consentimento
+                                </button>
+                            </h2>
+                            <div id="collapseOito" class="accordion-collapse collapse" aria-labelledby="headingSete" data-bs-parent="#faqAccordion" style="">
+                                <div class="accordion-body">
+                                    <p>
+                                        - O website incluirá um botão de consentimento expresso, onde o usuário deverá confirmar que leu e concorda com os Termos de Uso e a Política de Privacidade. Esse consentimento gerará um comprovativo digital que poderá ser consultado pelo usuário.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Accordion Item -->
+
+                        <!-- Accordion Item -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingNove">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNove" aria-expanded="false" aria-controls="collapseNove">
+                                    9. Alterações na Política de Privacidade
+                                </button>
+                            </h2>
+                            <div id="collapseNove" class="accordion-collapse collapse" aria-labelledby="headingNove" data-bs-parent="#faqAccordion" style="">
+                                <div class="accordion-body">
+                                    <p>
+                                         A Ekutivala reserva-se o direito de atualizar esta política de privacidade a qualquer momento. As alterações serão comunicadas aos usuários com um aviso prévio de pelo menos 30 dias, através do website ou por e-mail
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Accordion Item -->
+                        <!-- Accordion Item -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingDez">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDez" aria-expanded="false" aria-controls="collapseDez">
+                                    10. Contacto
+                                </button>
+                            </h2>
+                            <div id="collapseDez" class="accordion-collapse collapse" aria-labelledby="headingDez" data-bs-parent="#faqAccordion" style="">
+                                <div class="accordion-body">
+                                    <p>
+                                       Para dúvidas ou solicitações relacionadas à privacidade, os usuários podem entrar em contato através do e-mail: ekutivalasuporte@gmail.com.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Accordion Item -->
+
+                        <h1 class="mt-5">POLÍTICA DE REEMBOLSOS E CANCELAMENTOS</h1>
+                        <!-- Accordion Item -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingDez1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDez1" aria-expanded="false" aria-controls="collapseDez1">
+                                    1. Direito ao Arrependimento
+                                </button>
+                            </h2>
+                            <div id="collapseDez1" class="accordion-collapse collapse" aria-labelledby="headingDez1" data-bs-parent="#faqAccordion" style="">
+                                <div class="accordion-body">
+                                    <p>
+                                       Os usuários terão um período de 7 dias após a compra para solicitar o cancelamento e reembolso de serviços pagos, desde que o conteúdo não tenha sido acessado ou utilizado. Após esse período, ou após o início do curso ou serviço, não serão concedidos reembolsos, exceto em casos específicos onde o usuário poderá solicitar o reembolso após 1 ou 2 aulas, recebendo 20% do valor pago, caso decida não continuar com o curso.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Accordion Item -->
+                        <!-- Accordion Item -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingDez2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDez2" aria-expanded="false" aria-controls="collapseDez2">
+                                    2. Cancelamento de Serviços Recorrentes
+                                </button>
+                            </h2>
+                            <div id="collapseDez2" class="accordion-collapse collapse" aria-labelledby="headingDez2" data-bs-parent="#faqAccordion" style="">
+                                <div class="accordion-body">
+                                    <p>
+                                        Para serviços com pagamentos recorrentes (como assinaturas mensais), o usuário pode cancelar a qualquer momento, mas o acesso ao serviço será mantido até o final do período já pago. Não serão concedidos reembolsos parciais ou totais após o início do serviço.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Accordion Item -->
+                        <!-- Accordion Item -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingDez3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDez3" aria-expanded="false" aria-controls="collapseDez3">
+                                    3. Exceções
+                                </button>
+                            </h2>
+                            <div id="collapseDez3" class="accordion-collapse collapse" aria-labelledby="headingDez3" data-bs-parent="#faqAccordion" style="">
+                                <div class="accordion-body">
+                                    <p>
+                                       Não serão concedidos reembolsos para serviços que já foram integralmente utilizados ou para materiais digitais que foram baixados ou acessados.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Accordion Item -->
+
+                        <h1 class="mt-5">POLÍTICA DE SEGURANÇA</h1>
+                        <!-- Accordion Item -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingDez4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDez4" aria-expanded="false" aria-controls="collapseDez4">
+                                    1. Proteção de Dados
+                                </button>
+                            </h2>
+                            <div id="collapseDez4" class="accordion-collapse collapse" aria-labelledby="headingDez4" data-bs-parent="#faqAccordion" style="">
+                                <div class="accordion-body">
+                                    <p>
+                                         O website utiliza protocolos de segurança avançados, como HTTPS e criptografia, para proteger os dados dos usuários durante a transmissão e armazenamento. Apenas funcionários autorizados da Ekutivala têm acesso aos dados dos usuários, e esse acesso é limitado ao necessário para o desempenho de suas funções.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Accordion Item -->
+                        <!-- Accordion Item -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingDez5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDez5" aria-expanded="false" aria-controls="collapseDez5">
+                                    2. Monitoramento de Segurança
+                                </button>
+                            </h2>
+                            <div id="collapseDez5" class="accordion-collapse collapse" aria-labelledby="headingDez5" data-bs-parent="#faqAccordion" style="">
+                                <div class="accordion-body">
+                                    <p>
+                                        O website é monitorado constantemente para detectar e prevenir atividades maliciosas, como tentativas de hacking ou vazamento de dados. Em caso de detecção de atividades suspeitas, a Ekutivala tomará medidas imediatas para proteger os dados dos usuários.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Accordion Item -->
+                        <!-- Accordion Item -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingDez6">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDez6" aria-expanded="false" aria-controls="collapseDez6">
+                                    3. Backup de Dados
+                                </button>
+                            </h2>
+                            <div id="collapseDez6" class="accordion-collapse collapse" aria-labelledby="headingDez6" data-bs-parent="#faqAccordion" style="">
+                                <div class="accordion-body">
+                                    <p>
+                                       Os dados dos usuários são armazenados em servidores seguros e são realizados backups regulares para garantir a integridade e a disponibilidade das informações.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Accordion Item -->
+                        <!-- Accordion Item -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingDez7">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDez7" aria-expanded="false" aria-controls="collapseDez7">
+                                    4. Treinamento da Equipe
+                                </button>
+                            </h2>
+                            <div id="collapseDez7" class="accordion-collapse collapse" aria-labelledby="headingDez7" data-bs-parent="#faqAccordion" style="">
+                                <div class="accordion-body">
+                                    <p>
+                                        A equipe da Ekutivala recebe treinamento regular sobre práticas de segurança e proteção de dados para garantir o cumprimento das políticas estabelecidas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Accordion Item -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Politicas -->

@@ -1,0 +1,123 @@
+﻿@using Microsoft.AspNetCore.Http;
+@model List<NotificacaoEstudanteModel>;
+@{
+    ViewData["Title"] = "";
+    Layout = "_LayoutEstudante";
+}
+
+<style type="text/css">
+    .form-control{
+        background-color: #ecf1ff !important;
+    }
+</style>
+ <!-- Courses Admin Start -->
+    <div class="section overflow-hidden position-relative" id="wrapper">
+
+        <div class="page-content-wrapper py-0">
+
+            <!-- Admin Tab Menu Start -->
+            <div class="nav flex-column admin-tab-menu">
+                <a asp-area="" asp-controller="Estudante" asp-action="Index" >Inicio</a>
+                <a asp-area="" asp-controller="Estudante" asp-action="Perfil" >Perfil</a>
+                <a asp-area="" asp-controller="Estudante" asp-action="ListaNotificacao" class="active">Notificações</a>
+                <a asp-area="" asp-controller="Estudante" asp-action="ListaMeusCursos">Meus Cursos</a>
+                <a asp-area="" asp-controller="Estudante" asp-action="Logout">Sair</a>
+            </div>
+            <!-- Admin Tab Menu End -->
+
+            <div class="main-content-wrapper pb-0">
+                <div class="container-fluid">
+
+                    <!-- Admin Top Bar Start -->
+                    <div class="admin-top-bar flex-wrap">
+
+                        <div class="top-bar-filter">
+                            <h3> Notificações ativas</h3>
+                            <p id="mensagemSucesso" class="mensagem-sucesso">@ViewBag.MensagemSucesso</p>
+                            <p id="mensagemErro" class="mensagem-erro">@ViewBag.MensagemErro</p>
+                        </div>
+                    </div>
+                    <!-- Admin Top Bar End -->
+
+                    <!-- Question & Answer End -->
+                    <div class="question-answer">
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <!-- Answer User List Start -->
+                                <div class="answer-user-list" style="height: 90vw;">
+                                    <!-- Notificação 1: Preenchimento de Perfil -->
+                                    <div class="notifications-list">
+                                        @foreach (var notificacao in Model)
+                                        {
+                                            <div class="notification-item alert alert-light shadow-sm">
+                                                <div class="notification-icon">
+                                                    <i class="icofont-notification text-primary" style="font-size: 2rem;"></i>
+                                                </div>
+                                                <div class="notification-content">
+                                                    <h5 class="notification-title text-dark font-weight-bold mb-1">@notificacao.Titulo</h5>
+                                                    <p class="notification-message text-muted mb-0">
+                                                        @notificacao.Mensagem
+                                                    </p>
+                                                    <span class="notification-time small text-md">
+                                                        @{
+                                                            var diferenca = DateTime.Now - notificacao.DataCadastro;
+                                                            if (diferenca.TotalDays >= 1)
+                                                            {
+                                                                <text>Há @((int)diferenca.TotalDays) dias</text>
+                                                            }
+                                                            else if (diferenca.TotalHours >= 1)
+                                                            {
+                                                                <text>Há @((int)diferenca.TotalHours) horas</text>
+                                                            }
+                                                            else
+                                                            {
+                                                                <text>Há @((int)diferenca.TotalMinutes) minutos</text>
+                                                            }
+                                                        }
+                                                    </span>
+                                                </div>
+                                                <div class="notification-meta">
+                                                    <form asp-action="MarcarComoLida" asp-controller="Estudante" method="post" style="display:inline;">
+                                                        <input type="hidden" name="id" value="@notificacao.IdNotificacao" />
+                                                        <button type="submit" class="btn-close notification-close" title="Marcar como lida" aria-label="Fechar">
+                                                            <i class="icofont-close" style="font-size: 1.5rem;"></i>
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        }
+
+                                        @if (!Model.Any())
+                                        {
+                                            <div class="text-center py-4">
+                                                <i class="icofont-check-circled text-success" style="font-size: 2rem;"></i>
+                                                <p class="text-muted mt-2">Nenhuma notificação pendente</p>
+                                            </div>
+                                        }
+                                    </div>
+                                   
+
+                                </div>
+                                <!-- Answer User List End -->
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Question & Answer End -->
+
+                </div>
+            </div>
+                
+
+    </div>
+</div>
+
+        <!--Back To Start-->
+        <a href="#" class="back-to-top">
+            <i class="icofont-simple-up"></i>
+        </a>
+        <!--Back To End-->
+        @section Scripts {
+            
+        }

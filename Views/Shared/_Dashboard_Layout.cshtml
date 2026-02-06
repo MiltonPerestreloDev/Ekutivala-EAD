@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>@ViewData["Title"] - Dashboard</title>
+         <!-- ========== Meta Tags ========== -->
+        <meta name="robots" content="index, follow">  
+        <meta name="description" content="Ekutivala é um projeto académico-social que promove o multilinguismo entre estudantes universitários, com foco no inglês, facilitando o acesso ao emprego e preparando para o mercado de trabalho global.">
+        <meta name="keywords" content="multilinguismo, idiomas, inglês, estudantes universitários, emprego, mercado de trabalho, educação, Angola, Universidade Católica de Angola, Ucaniana, internacionalização, intercâmbio cultural">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <meta property="og:title" content="Ekutivala - Projeto Multilingual Universitário">
+        <meta property="og:description" content="Ekutivala é um projeto académico-social que promove o multilinguismo entre estudantes universitários, com foco no inglês, facilitando o acesso ao emprego e preparando para o mercado de trabalho global.">
+        <meta property="og:url" content="https://ekutivala.com/"> 
+        <meta property="og:image" content="https://ekutivala.com/assets/img/ekutivala-logo.jpg"> <meta property="og:type" content="website">
+
+        <!-- ========== Favicon ========== -->
+        <link rel="icon" type="image/png" href="~/assets/img/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="~/assets/img/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="~/assets/img/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="~/assets/img/favicon/apple-touch-icon.png" />
+        <link rel="manifest" href="~/assets/img/favicon/site.webmanifest" />
+
+        <link rel="stylesheet" href="~/css/dashboard.css">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="~/lib/datatables/css/jquery.dataTables.min.css" />
+        <link rel="stylesheet" href="~/lib/font-awesome/font-icon/fontawesome-all.min.css">
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" asp-area="" asp-controller="Files1" asp-action="Index">
+                Dashboard
+            </a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <!-- Navbar-->
+            
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Funcionalidades</div>
+
+                            <!-- Estudantes -->
+                            <a class="nav-link" asp-area="" asp-controller="Files1" asp-action="Listar_Estudantes">
+                                <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div>
+                                Estudantes 
+                            </a>
+
+                            <!-- Funcionários (apenas Administrador) -->
+                            @if (Context.Session.GetString("acessoFunc") == "A")
+                            {
+                                <a class="nav-link" asp-area="" asp-controller="Files1" asp-action="Listar_Funcionarios">
+                                    <div class="sb-nav-link-icon"><i class="fas fa-user-secret"></i></div>
+                                    Funcionários 
+                                </a>
+                            }
+
+                            <!-- Gerir Arquivos -->
+                            <a class="nav-link" asp-area="" asp-controller="Files1" asp-action="Listar_Arquivos">
+                                <div class="sb-nav-link-icon"><i class="fas fa-folder-open"></i></div>
+                                Gerir Arquivos
+                            </a>
+
+                            <!-- Vendas Livros -->
+                            <a class="nav-link" asp-area="" asp-controller="Files1" asp-action="Listar_VendasLivros">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book"></i></div>
+                                Vendas Livros
+                            </a>
+
+                            <!-- Vendas Cursos -->
+                            <a class="nav-link" asp-area="" asp-controller="Files1" asp-action="Listar_VendasCursos">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book"></i></div>
+                                Vendas Cursos
+                            </a>
+
+                            <div class="sb-sidenav-menu-heading">Logout</div>
+                            <a class="nav-link" asp-area="" asp-controller="Files1" asp-action="Logout">
+                                <div class="sb-nav-link-icon"><i class="fas fa-sign-out-alt"></i></div>
+                                Sair
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="sb-sidenav-footer">
+                        <div class="small">Conta de:</div>
+                        @Context.Session.GetString("nomeFunc")
+                    </div>
+                </nav>
+            </div>
+
+
+            <div id="layoutSidenav_content">
+        
+                @RenderBody()
+
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">&copy; Copyright 2025. All Rights Reserved by <a href="#">Ekutivala</a></div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <!-- Inclua os scripts do Bootstrap no final do documento para um carregamento mais rápido -->
+        <script src="~/js/scriptsdash.js"></script>
+        <script src="~/lib/datatables/dataTables.bootstrap4.min.js"></script>
+        <script src="~/js/datatables-simple-demo.js"></script>
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+        <script src="~/lib/datatables/js/jquery.dataTables.min.js"></script>
+        
+
+        <script>
+            $(document).ready(function (){
+                $('#datatablesSimple').DataTable({
+                    "language":{
+                        "emptyTable": "Nenhum registro encontrado",
+                        "lengthMenu": "_MENU_ resultados sendo mostrados",
+                        "info": "Mostrando de _START_ até _END_ de _TOTAL_ registrados",
+                        "infoEmpty": "Mostrando 0 até 0 de 0 registrados",
+                        "infoFiltered": "(Filtrados de _MAX_ registrados)",
+                        "infoPostFix": ".",
+                        "infoThousands": ".",
+                        "loadingRecords": "Carregando...",
+                        "processing": "Processando...",
+                        "zeroRecords": "Nenhum registro encotrado",
+                        "search": "Pesquisar",
+                        "paginate": {
+                            "next": "Próximo",
+                            "previous": "Anterior",
+                            "first": "Primeiro",
+                            "last": "Último",
+                        },
+                        "aria": {
+                            "sortAscending": "Ordenar colunar de forma ascendente",
+                            "sortDescending": "Ordenar colunar de forma descendente"
+                        }
+                    }
+                });
+            });
+        </script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+

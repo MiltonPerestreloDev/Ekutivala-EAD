@@ -1,0 +1,1277 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\Ekutivala_EAD.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Ekutivala_EAD.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\css\\animate.css",
+      "PackagePath": "staticwebassets\\assets\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\css\\bootsnav.css",
+      "PackagePath": "staticwebassets\\assets\\css\\bootsnav.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\css\\chat.css",
+      "PackagePath": "staticwebassets\\assets\\css\\chat.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\css\\elegant-icons.css",
+      "PackagePath": "staticwebassets\\assets\\css\\elegant-icons.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\css\\flaticon-set.css",
+      "PackagePath": "staticwebassets\\assets\\css\\flaticon-set.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\assets\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\css\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\owl.theme.default.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\assets\\css\\responsive.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\fonts\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Flaticon.woff"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\fonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\fonts\\fa-light-300.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-light-300.woff2"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\fonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\fonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\Logotipo-Principal.png",
+      "PackagePath": "staticwebassets\\assets\\img\\Logotipo-Principal.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\about\\5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\about\\6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\6.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\about\\7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\advisor\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\advisor\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\advisor\\IMG_4303.PNG",
+      "PackagePath": "staticwebassets\\assets\\img\\advisor\\IMG_4303.PNG"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\advisor\\cadastrar.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\advisor\\cadastrar.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\advisor\\cc.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\advisor\\cc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\advisor\\cv.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\advisor\\cv.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\advisor\\login.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\advisor\\login.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\advisor\\login_func.png",
+      "PackagePath": "staticwebassets\\assets\\img\\advisor\\login_func.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\advisor\\mm2025.png",
+      "PackagePath": "staticwebassets\\assets\\img\\advisor\\mm2025.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\advisor\\p1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\advisor\\p1.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\advisor\\p2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\advisor\\p2.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\advisor\\prof.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\advisor\\prof.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\banner\\10.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\banner\\11.webp",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\11.webp"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\banner\\12.png",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\12.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\banner\\13.png",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\13.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\banner\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\banner\\4352cca53ced34cc6e3460bc11ded2bb.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\4352cca53ced34cc6e3460bc11ded2bb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\banner\\9.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\banner\\hero_blog_School-Libraries_high-school_photo_istock_1334509892_SeventyFour.webp",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\hero_blog_School-Libraries_high-school_photo_istock_1334509892_SeventyFour.webp"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\blog\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\blog\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\blog\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\category\\c1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\c1.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\category\\c2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\c2.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\category\\c3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\c3.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\category\\c4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\c4.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\category\\c5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\c5.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\category\\c6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\c6.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\contacto.png",
+      "PackagePath": "staticwebassets\\assets\\img\\contacto.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\courses\\ao.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\courses\\ao.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\courses\\cr.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\courses\\cr.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\courses\\eng.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\courses\\eng.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\courses\\es.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\courses\\es.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\courses\\fran.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\courses\\fran.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\courses\\it.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\courses\\it.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\courses\\teste.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\courses\\teste.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\ekutivala-logo.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\ekutivala-logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\favicon\\Logo_png.png",
+      "PackagePath": "staticwebassets\\assets\\img\\favicon\\Logo_png.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\favicon\\Logo_svg.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\favicon\\Logo_svg.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\favicon\\apple-touch-icon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\favicon\\apple-touch-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\favicon\\favicon-96x96.png",
+      "PackagePath": "staticwebassets\\assets\\img\\favicon\\favicon-96x96.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\favicon\\favicon.ico",
+      "PackagePath": "staticwebassets\\assets\\img\\favicon\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\favicon\\favicon.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\favicon\\favicon.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\favicon\\site.webmanifest",
+      "PackagePath": "staticwebassets\\assets\\img\\favicon\\site.webmanifest"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\favicon\\web-app-manifest-192x192.png",
+      "PackagePath": "staticwebassets\\assets\\img\\favicon\\web-app-manifest-192x192.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\favicon\\web-app-manifest-512x512.png",
+      "PackagePath": "staticwebassets\\assets\\img\\favicon\\web-app-manifest-512x512.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\livros\\1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\livros\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\livros\\IMG_3024.JPG",
+      "PackagePath": "staticwebassets\\assets\\img\\livros\\IMG_3024.JPG"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\livros\\IMG_3025.JPG",
+      "PackagePath": "staticwebassets\\assets\\img\\livros\\IMG_3025.JPG"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\livros\\IMG_3026.JPG",
+      "PackagePath": "staticwebassets\\assets\\img\\livros\\IMG_3026.JPG"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\livros\\IMG_3027.JPG",
+      "PackagePath": "staticwebassets\\assets\\img\\livros\\IMG_3027.JPG"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\livros\\IMG_3028.JPG",
+      "PackagePath": "staticwebassets\\assets\\img\\livros\\IMG_3028.JPG"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\livros\\IMG_3029.WEBP",
+      "PackagePath": "staticwebassets\\assets\\img\\livros\\IMG_3029.WEBP"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\livros\\IMG_3030.JPG",
+      "PackagePath": "staticwebassets\\assets\\img\\livros\\IMG_3030.JPG"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\logo-dark.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo-dark.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\logo-light.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo-light.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\preloader.gif",
+      "PackagePath": "staticwebassets\\assets\\img\\preloader.gif"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\prof\\11.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\prof\\11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\prof\\12.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\prof\\12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\prof\\13.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\prof\\13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\prof\\14.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\prof\\14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\prof\\16.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\prof\\16.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\prof\\20.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\prof\\20.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\prof\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\prof\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\prof\\30.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\prof\\30.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\prof\\303.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\prof\\303.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\prof\\3ll.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\prof\\3ll.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\prof\\5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\prof\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\prof\\7.7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\prof\\7.7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\prof\\7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\prof\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\img\\prof\\9.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\prof\\9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\js\\bootsnav.js",
+      "PackagePath": "staticwebassets\\assets\\js\\bootsnav.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\js\\chat-static.js",
+      "PackagePath": "staticwebassets\\assets\\js\\chat-static.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\js\\count-to.js",
+      "PackagePath": "staticwebassets\\assets\\js\\count-to.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\js\\datatables\\dataTables.bootstrap4.css",
+      "PackagePath": "staticwebassets\\assets\\js\\datatables\\dataTables.bootstrap4.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\js\\datatables\\dataTables.bootstrap4.js",
+      "PackagePath": "staticwebassets\\assets\\js\\datatables\\dataTables.bootstrap4.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\js\\datatables\\dataTables.bootstrap4.min.css",
+      "PackagePath": "staticwebassets\\assets\\js\\datatables\\dataTables.bootstrap4.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\js\\datatables\\dataTables.bootstrap4.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\datatables\\dataTables.bootstrap4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\js\\datatables\\jquery.dataTables.js",
+      "PackagePath": "staticwebassets\\assets\\js\\datatables\\jquery.dataTables.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\js\\datatables\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\datatables\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\js\\datatables\\jquery.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\datatables\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\js\\imagesloaded.pkgd.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\imagesloaded.pkgd.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\js\\isotope.pkgd.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\isotope.pkgd.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\js\\jquery-3.7.1.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery-3.7.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\js\\jquery.appear.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.appear.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\js\\jquery.easing.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.easing.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\js\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\js\\jquery.nice-select.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.nice-select.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\js\\loopcounter.js",
+      "PackagePath": "staticwebassets\\assets\\js\\loopcounter.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\assets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets\\js\\wow.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\wow.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\css\\style.min.css",
+      "PackagePath": "staticwebassets\\assets_dash\\css\\style.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\css\\vendor\\plugins.min.css",
+      "PackagePath": "staticwebassets\\assets_dash\\css\\vendor\\plugins.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\fonts\\flaticon.ttf",
+      "PackagePath": "staticwebassets\\assets_dash\\fonts\\flaticon.ttf"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\fonts\\icofont.woff2",
+      "PackagePath": "staticwebassets\\assets_dash\\fonts\\icofont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\author\\author-01.jpg",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\author\\author-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\author\\author-02.jpg",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\author\\author-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\author\\author-07.jpg",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\author\\author-07.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\author\\author-08.jpg",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\author\\author-08.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\author\\author-09.jpg",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\author\\author-09.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\flag\\flag-1.png",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\flag\\flag-1.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\flag\\flag-2.png",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\flag\\flag-2.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\flag\\flag-3.png",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\flag\\flag-3.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\flag\\flag-4.png",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\flag\\flag-4.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\flag\\flag-5.png",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\flag\\flag-5.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\flag\\flag-6.png",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\flag\\flag-6.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\logo-icon.png",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\logo-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\logo.png",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\menu-icon\\icon-1.png",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\menu-icon\\icon-1.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\menu-icon\\icon-2.png",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\menu-icon\\icon-2.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\menu-icon\\icon-3.png",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\menu-icon\\icon-3.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\menu-icon\\icon-4.png",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\menu-icon\\icon-4.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\menu-icon\\icon-5.png",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\menu-icon\\icon-5.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\menu-icon\\icon-6.png",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\menu-icon\\icon-6.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\new-courses-banner.jpg",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\new-courses-banner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\play.png",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\play.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\resources-icon\\icon-1-1.png",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\resources-icon\\icon-1-1.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\resources-icon\\icon-1-2.png",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\resources-icon\\icon-1-2.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\resources-icon\\icon-1-3.png",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\resources-icon\\icon-1-3.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\resources-icon\\icon-1-4.png",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\resources-icon\\icon-1-4.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\resources-icon\\icon-1-5.png",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\resources-icon\\icon-1-5.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\resources-icon\\icon-1-6.png",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\resources-icon\\icon-1-6.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\resources-icon\\icon-2-1.png",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\resources-icon\\icon-2-1.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\resources-icon\\icon-2-2.png",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\resources-icon\\icon-2-2.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\resources-icon\\icon-2-3.png",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\resources-icon\\icon-2-3.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\resources-icon\\icon-2-4.png",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\resources-icon\\icon-2-4.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\resources-icon\\icon-2-5.png",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\resources-icon\\icon-2-5.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\resources-icon\\icon-2-6.png",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\resources-icon\\icon-2-6.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\shape\\shape-21.png",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\shape\\shape-21.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\shape\\shape-22.png",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\shape\\shape-22.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\images\\shape\\shape-27.png",
+      "PackagePath": "staticwebassets\\assets_dash\\images\\shape\\shape-27.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\js\\main.js",
+      "PackagePath": "staticwebassets\\assets_dash\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\js\\plugins.min.js",
+      "PackagePath": "staticwebassets\\assets_dash\\js\\plugins.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\js\\plugins\\jquery.vmap.min.js",
+      "PackagePath": "staticwebassets\\assets_dash\\js\\plugins\\jquery.vmap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\js\\plugins\\jquery.vmap.sampledata.js",
+      "PackagePath": "staticwebassets\\assets_dash\\js\\plugins\\jquery.vmap.sampledata.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\js\\plugins\\jquery.vmap.world.js",
+      "PackagePath": "staticwebassets\\assets_dash\\js\\plugins\\jquery.vmap.world.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\js\\student-map.js",
+      "PackagePath": "staticwebassets\\assets_dash\\js\\student-map.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\js\\vendor\\jquery-3.5.1.min.js",
+      "PackagePath": "staticwebassets\\assets_dash\\js\\vendor\\jquery-3.5.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\assets_dash\\js\\vendor\\modernizr-3.11.2.min.js",
+      "PackagePath": "staticwebassets\\assets_dash\\js\\vendor\\modernizr-3.11.2.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\css\\dashboard.css",
+      "PackagePath": "staticwebassets\\css\\dashboard.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\css\\font-icon\\fontawesome-all.min.css",
+      "PackagePath": "staticwebassets\\css\\font-icon\\fontawesome-all.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\css\\webfonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\css\\webfonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\css\\webfonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\css\\webfonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\css\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\css\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\css\\webfonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\css\\webfonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\css\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\css\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\css\\webfonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\css\\webfonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\css\\webfonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\css\\webfonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\css\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\css\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\css\\webfonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\css\\webfonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\css\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\css\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\css\\webfonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\css\\webfonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\css\\webfonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\css\\webfonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\css\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\css\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\css\\webfonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\css\\webfonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\css\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\css\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\css\\webfonts\\index.html",
+      "PackagePath": "staticwebassets\\css\\webfonts\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\js\\datatables-simple-demo.js",
+      "PackagePath": "staticwebassets\\js\\datatables-simple-demo.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\js\\scriptsdash.js",
+      "PackagePath": "staticwebassets\\js\\scriptsdash.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\css\\dataTables.bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\datatables\\css\\dataTables.bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\css\\dataTables.bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\datatables\\css\\dataTables.bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\css\\dataTables.bootstrap4.css",
+      "PackagePath": "staticwebassets\\lib\\datatables\\css\\dataTables.bootstrap4.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\css\\dataTables.bootstrap4.min.css",
+      "PackagePath": "staticwebassets\\lib\\datatables\\css\\dataTables.bootstrap4.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\css\\dataTables.bootstrap5.css",
+      "PackagePath": "staticwebassets\\lib\\datatables\\css\\dataTables.bootstrap5.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\css\\dataTables.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\lib\\datatables\\css\\dataTables.bootstrap5.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\css\\dataTables.bulma.css",
+      "PackagePath": "staticwebassets\\lib\\datatables\\css\\dataTables.bulma.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\css\\dataTables.bulma.min.css",
+      "PackagePath": "staticwebassets\\lib\\datatables\\css\\dataTables.bulma.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\css\\dataTables.dataTables.css",
+      "PackagePath": "staticwebassets\\lib\\datatables\\css\\dataTables.dataTables.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\css\\dataTables.dataTables.min.css",
+      "PackagePath": "staticwebassets\\lib\\datatables\\css\\dataTables.dataTables.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\css\\dataTables.foundation.css",
+      "PackagePath": "staticwebassets\\lib\\datatables\\css\\dataTables.foundation.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\css\\dataTables.foundation.min.css",
+      "PackagePath": "staticwebassets\\lib\\datatables\\css\\dataTables.foundation.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\css\\dataTables.jqueryui.css",
+      "PackagePath": "staticwebassets\\lib\\datatables\\css\\dataTables.jqueryui.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\css\\dataTables.jqueryui.min.css",
+      "PackagePath": "staticwebassets\\lib\\datatables\\css\\dataTables.jqueryui.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\css\\dataTables.semanticui.css",
+      "PackagePath": "staticwebassets\\lib\\datatables\\css\\dataTables.semanticui.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\css\\dataTables.semanticui.min.css",
+      "PackagePath": "staticwebassets\\lib\\datatables\\css\\dataTables.semanticui.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\css\\jquery.dataTables.css",
+      "PackagePath": "staticwebassets\\lib\\datatables\\css\\jquery.dataTables.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\css\\jquery.dataTables.min.css",
+      "PackagePath": "staticwebassets\\lib\\datatables\\css\\jquery.dataTables.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\images\\Thumbs.db",
+      "PackagePath": "staticwebassets\\lib\\datatables\\images\\Thumbs.db"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\images\\sort_asc.png",
+      "PackagePath": "staticwebassets\\lib\\datatables\\images\\sort_asc.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\images\\sort_asc_disabled.png",
+      "PackagePath": "staticwebassets\\lib\\datatables\\images\\sort_asc_disabled.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\images\\sort_both.png",
+      "PackagePath": "staticwebassets\\lib\\datatables\\images\\sort_both.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\images\\sort_desc.png",
+      "PackagePath": "staticwebassets\\lib\\datatables\\images\\sort_desc.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\images\\sort_desc_disabled.png",
+      "PackagePath": "staticwebassets\\lib\\datatables\\images\\sort_desc_disabled.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\js\\dataTables.bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\datatables\\js\\dataTables.bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\js\\dataTables.bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\datatables\\js\\dataTables.bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\js\\dataTables.bootstrap4.js",
+      "PackagePath": "staticwebassets\\lib\\datatables\\js\\dataTables.bootstrap4.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\js\\dataTables.bootstrap4.min.js",
+      "PackagePath": "staticwebassets\\lib\\datatables\\js\\dataTables.bootstrap4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\js\\dataTables.bootstrap5.js",
+      "PackagePath": "staticwebassets\\lib\\datatables\\js\\dataTables.bootstrap5.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\js\\dataTables.bootstrap5.min.js",
+      "PackagePath": "staticwebassets\\lib\\datatables\\js\\dataTables.bootstrap5.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\js\\dataTables.bulma.js",
+      "PackagePath": "staticwebassets\\lib\\datatables\\js\\dataTables.bulma.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\js\\dataTables.bulma.min.js",
+      "PackagePath": "staticwebassets\\lib\\datatables\\js\\dataTables.bulma.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\js\\dataTables.dataTables.js",
+      "PackagePath": "staticwebassets\\lib\\datatables\\js\\dataTables.dataTables.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\js\\dataTables.dataTables.min.js",
+      "PackagePath": "staticwebassets\\lib\\datatables\\js\\dataTables.dataTables.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\js\\dataTables.foundation.js",
+      "PackagePath": "staticwebassets\\lib\\datatables\\js\\dataTables.foundation.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\js\\dataTables.foundation.min.js",
+      "PackagePath": "staticwebassets\\lib\\datatables\\js\\dataTables.foundation.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\js\\dataTables.jqueryui.js",
+      "PackagePath": "staticwebassets\\lib\\datatables\\js\\dataTables.jqueryui.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\js\\dataTables.jqueryui.min.js",
+      "PackagePath": "staticwebassets\\lib\\datatables\\js\\dataTables.jqueryui.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\js\\dataTables.semanticui.js",
+      "PackagePath": "staticwebassets\\lib\\datatables\\js\\dataTables.semanticui.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\js\\dataTables.semanticui.min.js",
+      "PackagePath": "staticwebassets\\lib\\datatables\\js\\dataTables.semanticui.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\js\\jquery.dataTables.js",
+      "PackagePath": "staticwebassets\\lib\\datatables\\js\\jquery.dataTables.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\datatables\\js\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\lib\\datatables\\js\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\font-awesome\\font-icon\\fontawesome-all.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\font-icon\\fontawesome-all.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\font-awesome\\webfonts\\index.html",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\style.css",
+      "PackagePath": "staticwebassets\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\uploads\\covers\\0background_10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\covers\\0background_10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\uploads\\covers\\30e7b42f-1e5b-4e0a-96c4-48d946969c75_IMG_3027.JPG",
+      "PackagePath": "staticwebassets\\uploads\\covers\\30e7b42f-1e5b-4e0a-96c4-48d946969c75_IMG_3027.JPG"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\uploads\\covers\\4f9aac35-c090-4210-93c8-88850f5d5e5e_IMG_3026.JPG",
+      "PackagePath": "staticwebassets\\uploads\\covers\\4f9aac35-c090-4210-93c8-88850f5d5e5e_IMG_3026.JPG"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\uploads\\covers\\544cb432-f335-4906-8f94-d00b7a4a2995_background_10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\covers\\544cb432-f335-4906-8f94-d00b7a4a2995_background_10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\uploads\\covers\\5aa2b665-09a8-4bc6-a574-76f0fd6c3682_0background_10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\covers\\5aa2b665-09a8-4bc6-a574-76f0fd6c3682_0background_10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\uploads\\covers\\5cb6b1d0-c33a-4459-8939-7dc7693eff72_0background_10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\covers\\5cb6b1d0-c33a-4459-8939-7dc7693eff72_0background_10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\uploads\\covers\\673116e6-faad-4497-a295-0032b92d6010_1.png",
+      "PackagePath": "staticwebassets\\uploads\\covers\\673116e6-faad-4497-a295-0032b92d6010_1.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\uploads\\covers\\6cdcad72-d538-4d33-a355-288878cdb53d_IMG_3028.JPG",
+      "PackagePath": "staticwebassets\\uploads\\covers\\6cdcad72-d538-4d33-a355-288878cdb53d_IMG_3028.JPG"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\uploads\\covers\\71bbdef7-77b0-4e12-b574-591bac41bff7_0background_10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\covers\\71bbdef7-77b0-4e12-b574-591bac41bff7_0background_10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\uploads\\covers\\7e103682-9095-4a14-a8f2-30784f76f3be_background_12.png",
+      "PackagePath": "staticwebassets\\uploads\\covers\\7e103682-9095-4a14-a8f2-30784f76f3be_background_12.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\uploads\\covers\\892098e2-9b1f-4551-86f9-7188502386a4_0background_10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\covers\\892098e2-9b1f-4551-86f9-7188502386a4_0background_10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\uploads\\covers\\897319e5-3f6d-463c-93da-aec646f6d9f2_IMG_3030.JPG",
+      "PackagePath": "staticwebassets\\uploads\\covers\\897319e5-3f6d-463c-93da-aec646f6d9f2_IMG_3030.JPG"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\uploads\\covers\\a30f32ce-75ed-46ad-8b37-69961a8d59b1_background_10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\covers\\a30f32ce-75ed-46ad-8b37-69961a8d59b1_background_10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\uploads\\covers\\a9cc3fe1-90dd-43d0-803d-17bea7cb127d_0background_10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\covers\\a9cc3fe1-90dd-43d0-803d-17bea7cb127d_0background_10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\uploads\\covers\\af0c82d5-4446-4006-a13b-a8da49248bd7_background_10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\covers\\af0c82d5-4446-4006-a13b-a8da49248bd7_background_10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\uploads\\covers\\b4a3d1d8-88a9-405c-8ffe-6fbc73b9c1a0_background_11.jpg",
+      "PackagePath": "staticwebassets\\uploads\\covers\\b4a3d1d8-88a9-405c-8ffe-6fbc73b9c1a0_background_11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\uploads\\covers\\b572995b-b37f-4bc5-907d-2baa28a0419d_background_11.jpg",
+      "PackagePath": "staticwebassets\\uploads\\covers\\b572995b-b37f-4bc5-907d-2baa28a0419d_background_11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\uploads\\covers\\bb4702e3-996d-4290-afe8-702535735556_background_10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\covers\\bb4702e3-996d-4290-afe8-702535735556_background_10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\uploads\\covers\\d2d9f03e-43c6-41dd-b9a5-8a085f544343_IMG_3024.JPG",
+      "PackagePath": "staticwebassets\\uploads\\covers\\d2d9f03e-43c6-41dd-b9a5-8a085f544343_IMG_3024.JPG"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\Sistemas_Web\\Ekutivala_EAD\\wwwroot\\uploads\\covers\\e74a7cec-591e-4034-a857-419b01830d94_0background_10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\covers\\e74a7cec-591e-4034-a857-419b01830d94_0background_10.jpg"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.Ekutivala_EAD.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.Ekutivala_EAD.props",
+      "PackagePath": "build\\Ekutivala_EAD.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Ekutivala_EAD.props",
+      "PackagePath": "buildMultiTargeting\\Ekutivala_EAD.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.Ekutivala_EAD.props",
+      "PackagePath": "buildTransitive\\Ekutivala_EAD.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

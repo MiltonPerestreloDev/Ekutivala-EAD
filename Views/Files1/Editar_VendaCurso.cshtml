@@ -1,0 +1,109 @@
+@model VendaCursoModel
+
+@{
+    ViewData["Title"] = "Editar Status da Venda";
+    Layout = "_Dashboard_Layout";
+}
+
+<style>
+        .form-control[readonly] {
+            background-color: #f8f9fa;
+            border-color: #dee2e6;
+            color: #6c757d;
+        }
+    </style>
+    
+<main>
+    <div class="container-fluid px-4">
+        <h1 class="mt-4">Editar Status da Venda</h1>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-edit me-1"></i>
+                Atualizar Status da Venda
+            </div>
+            <div class="card-body">
+                <form asp-action="Editar_VendaCurso" method="post">
+                    <!-- Campos ocultos -->
+                    <input asp-for="IdVenda" type="hidden" />
+                    <input asp-for="NomeCliente" type="hidden" />
+                    <input asp-for="EmailCliente" type="hidden" />
+                    <input asp-for="TelefoneCliente" type="hidden" />
+                    <input asp-for="TipoPagamento" type="hidden" />
+                    <input asp-for="IdCursoFK" type="hidden" />
+                    <input asp-for="Fatura" type="hidden" />
+                    <input asp-for="DataCadastro" type="hidden" />~
+
+                    <div class="row">
+                        <!-- Coluna 1: Informações da Venda (somente leitura) -->
+                        <div class="col-md-6">
+                            <div class="form-group mb-3">
+                                <label class="form-label">Fatura</label>
+                                <input class="form-control" value="@Model.Fatura" readonly />
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label class="form-label">Cliente</label>
+                                <input class="form-control" value="@Model.NomeCliente" readonly />
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label class="form-label">E-mail</label>
+                                <input class="form-control" value="@Model.EmailCliente" readonly />
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label class="form-label">Telefone</label>
+                                <input class="form-control" value="@Model.TelefoneCliente" readonly />
+                            </div>
+                        </div>
+
+                        <!-- Coluna 2: Status (editável) e Informações Adicionais -->
+                        <div class="col-md-6">
+                            <div class="form-group mb-3">
+                                <label asp-for="Status" class="form-label">Status</label>
+                                <select asp-for="Status" class="form-select" required>
+                                    <option value="">Selecione o status...</option>
+                                    <option value="Pendente">Pendente</option>
+                                    <option value="Aprovada">Aprovada</option>
+                                    <option value="Cancelada">Cancelada</option>
+                                </select>
+                                <span asp-validation-for="Status" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label class="form-label">Curso</label>
+                                <input class="form-control" value="@Model.Curso?.Nome" readonly />
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label class="form-label">Valor</label>
+                                <input class="form-control" value="@Model.Curso?.Preco.ToString("N0") KZ" readonly />
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label class="form-label">Tipo de Pagamento</label>
+                                <input class="form-control" value="@Model.TipoPagamento" readonly />
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label class="form-label">Data da Venda</label>
+                                <input class="form-control" value="@Model.DataCadastro.ToString("dd/MM/yyyy HH:mm")" readonly />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+                        <a asp-action="Listar_VendasCursos" class="btn btn-secondary me-md-2">
+                            <i class="fas fa-arrow-left"></i> Voltar
+                        </a>
+                        <button type="submit" class="btn btn-success">
+                            <i class="fas fa-save"></i> Atualizar Status
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+

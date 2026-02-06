@@ -1,0 +1,227 @@
+﻿@using Microsoft.AspNetCore.Http;
+@model EstudanteModel;
+@{
+    ViewData["Title"] = "";
+    Layout = "_LayoutEstudante";
+}
+
+<style type="text/css">
+    .form-control{
+        background-color: #ecf1ff !important;
+    }
+</style>
+    
+ <!-- Courses Admin Start -->
+        <div class="section overflow-hidden position-relative" id="wrapper">
+
+            <div class="page-content-wrapper py-0">
+
+                <!-- Admin Tab Menu Start -->
+                <div class="nav flex-column admin-tab-menu">
+                    <a asp-area="" asp-controller="Estudante" asp-action="Index" >Inicio</a>
+                    <a asp-area="" asp-controller="Estudante" asp-action="Perfil" class="active">Perfil</a>
+                    <a asp-area="" asp-controller="Estudante" asp-action="ListaNotificacao">Notificações</a>
+                    <a asp-area="" asp-controller="Estudante" asp-action="ListaMeusCursos">Meus Cursos</a>
+                    <a asp-area="" asp-controller="Estudante" asp-action="Logout">Sair</a>
+                </div>
+                <!-- Admin Tab Menu End -->
+
+                <!-- Page Content Wrapper Start -->
+                <div class="main-content-wrapper">
+                    <div class="container">
+                        <p id="mensagemSucesso" class="mensagem-sucesso">@ViewBag.MensagemSucesso</p>
+                        <p id="mensagemErro" class="mensagem-erro">@ViewBag.MensagemErro</p>
+                        
+                        <h3 class="mb-4">Ver Perfil</h3>
+
+                        <!-- Formulário de Edição -->
+                        <form asp-action="Perfil" asp-controller="Estudante" method="POST">
+                            <div class="row">
+                                <input type="hidden" asp-for="IdEstudante" />
+
+                                <!-- Nome -->
+                                <div class="col-md-6 mb-3 single-form">
+                                     <label asp-for="Nome">Nome Completo</label>
+                                    <input asp-for="Nome" value="@Model.Nome" class="form-control" required />
+                                </div>
+
+                                <!-- Email (somente leitura) -->
+                                <div class="col-md-6 mb-3 single-form">
+                                    <label asp-for="Email">E-mail</label>
+                                    <input asp-for="Email" value="@Model.Email" class="form-control"/>
+                                </div>
+
+                                <!-- Telefone -->
+                                <div class="col-md-6 mb-3 single-form">
+                                    <label asp-for="Telefone"></label>
+                                    <input asp-for="Telefone" value="@Model.Telefone" class="form-control" required/>
+                                </div>
+
+                                <!-- Nacionalidade -->
+                                <div class="col-md-6 mb-3 single-form">
+                                    <label asp-for="Nacionalidade"></label>
+                                    <input asp-for="Nacionalidade" value="@Model.Nacionalidade" class="form-control" required/>
+                                </div>
+
+                                <!-- País -->
+                                <div class="col-md-6 mb-3 single-form">
+                                    <label asp-for="Pais">País</label>
+                                    <input asp-for="Pais" value="@Model.Pais" class="form-control" required/>
+                                </div>
+
+                                <!-- Província -->
+                                <div class="col-md-6 mb-3 single-form">
+                                    <label asp-for="Provincia">Província</label>
+                                    <input asp-for="Provincia" value="@Model.Provincia" class="form-control" required/>
+                                </div>
+
+                                <!-- Cidade -->
+                                <div class="col-md-6 mb-3 single-form">
+                                    <label asp-for="Cidade"></label>
+                                    <input asp-for="Cidade" value="@Model.Cidade" class="form-control" required/>
+                                </div>
+
+                                <!-- Instituição -->
+                                <div class="col-md-6 mb-3 single-form">
+                                    <label asp-for="Instituicao">Instituição</label>
+                                    <input asp-for="Instituicao" value="@Model.Instituicao" class="form-control" placeholder="Nome da instituição de ensino" />
+                                </div>
+
+                                <!-- Nível Acadêmico -->
+                                <div class="single-form">
+                                    <label asp-for="NivelAcademico">Nivel Acadêmico</label>
+                                    <select asp-for="NivelAcademico" class="form-control">
+                                        <option value="">Selecione o nível acadêmico</option>
+                                        <option value="Ensino Primário ">Ensino Primário</option>
+                                        <option value="Ensino Médio">Ensino Médio</option>
+                                        <option value="Ensino Superior">Ensino Superior</option>
+                                        <option value="Pós-Graduação">Pós-Graduação</option>
+                                        <option value="Mestrado">Mestrado</option>
+                                        <option value="Doutorado">Doutorado</option>
+                                    </select>
+                                </div>
+
+
+                                <!-- Status -->
+                                <div class="col-md-6 mb-3" style="display: none;">
+                                    <label asp-for="Status"></label>
+                                    <select asp-for="Status" class="form-control">
+                                        <option value="ATIVO">Ativo</option>
+                                    </select>
+                                </div>
+
+                                <!-- Data de Cadastro (somente leitura) -->
+                                <div class="col-md-6 mb-3" style="display: none;">
+                                    <label asp-for="DataCadastro"></label>
+                                    <input asp-for="DataCadastro" value="@Model.DataCadastro" class="form-control" readonly required/>
+                                </div>
+
+                                <!-- Campo para alterar senha (opcional) -->
+                                <div class="col-md-6 mb-3">
+                                    <!-- Campo hidden que receberá o valor de NovaSenha somente se for válido -->
+                                    <input asp-for="Senha" type="hidden" id="Senha" name="Senha" />
+                                </div>
+
+
+                                <!-- Botão de Salvar -->
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn btn-primary w-100">Salvar Alterações</button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <!-- Botão para acionar o modal -->
+                        <button type="button" class="btn btn-danger w-100 mt-3" data-bs-toggle="modal" data-bs-target="#confirmarEliminacao">
+                            Eliminar Conta
+                        </button>
+
+                        <!-- Modal de Confirmação -->
+                        <div class="modal fade" id="confirmarEliminacao" tabindex="-1" aria-labelledby="confirmarEliminacaoLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-danger text-white">
+                                        <h5 class="modal-title" id="confirmarEliminacaoLabel">Confirmar Eliminação</h5>
+                                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Tem certeza absoluta que deseja eliminar sua conta?</p>
+                                        <p class="fw-bold">Esta ação torna todos os seus dados inativos e para reativar terá de falar com o suporte técnico.</p>
+                                        <p>Para confirmar, digite <span class="badge bg-dark">ELIMINAR</span> no campo abaixo:</p>
+                                        <input type="text" id="confirmacaoTexto" class="form-control" placeholder="Digite ELIMINAR">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                        <form asp-action="EliminarEstudante" asp-controller="Estudante" method="post" id="formEliminar">
+                                            <input type="hidden" name="idEstudante" value="@Model.IdEstudante" />
+                                            <button type="submit" class="btn btn-danger" id="btnConfirmarEliminar" disabled>
+                                                Confirmar Eliminação
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div> 
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <!--Back To Start-->
+        <a href="#" class="back-to-top">
+            <i class="icofont-simple-up"></i>
+        </a>
+        <!--Back To End-->
+        @section Scripts {
+        <!-- Script para verificar e atribuir a senha -->
+            <script>
+
+                document.addEventListener('DOMContentLoaded', function() {
+                    // Função para mostrar e depois esconder a mensagem
+                    function mostrarMensagem(elemento) {
+                        if (elemento.textContent.trim() !== '') {
+                            elemento.style.display = 'block';
+                            
+                            // Inicia o fade-out após 15 segundos
+                            setTimeout(function() {
+                                elemento.classList.add('fade-out');
+                                
+                                // Esconde completamente após a transição
+                                setTimeout(function() {
+                                    elemento.style.display = 'none';
+                                    elemento.classList.remove('fade-out');
+                                }, 1000); // Tempo da transição (1s)
+                            }, 15000); // 15 segundos
+                        }
+                    }
+
+                    // Aplica para ambas as mensagens
+                    const mensagemSucesso = document.getElementById('mensagemSucesso');
+                    const mensagemErro = document.getElementById('mensagemErro');
+                    
+                    mostrarMensagem(mensagemSucesso);
+                    mostrarMensagem(mensagemErro);
+                });
+        </script>
+         
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const confirmacaoTexto = document.getElementById('confirmacaoTexto');
+                const btnConfirmarEliminar = document.getElementById('btnConfirmarEliminar');
+                
+                confirmacaoTexto.addEventListener('input', function() {
+                    btnConfirmarEliminar.disabled = this.value.trim().toUpperCase() !== 'ELIMINAR';
+                });
+                
+                // Opcional: Limpar o campo quando o modal for fechado
+                $('#confirmarEliminacao').on('hidden.bs.modal', function () {
+                    confirmacaoTexto.value = '';
+                    btnConfirmarEliminar.disabled = true;
+                });
+            });
+        </script>
+    }

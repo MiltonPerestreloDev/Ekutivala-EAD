@@ -1,0 +1,297 @@
+﻿@using Microsoft.AspNetCore.Http
+@model ListaCursosViewModel
+@{
+    ViewData["Title"] = "Cursos Disponíveis";
+    Layout = "_LayoutEstudante";
+
+    var telefone = Context.Session.GetString("telefone");
+    var morada = Context.Session.GetString("morada");
+    var nacionalidade = Context.Session.GetString("nacionalidade");
+
+    bool dadosCompletos = !string.IsNullOrEmpty(telefone) && telefone != "null"
+                       && !string.IsNullOrEmpty(morada) && morada != "null"
+                       && !string.IsNullOrEmpty(nacionalidade) && nacionalidade != "null";
+}
+<style>
+
+        /* Card base */
+    .course-card {
+        background: #fff;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .course-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+
+    /* Imagem */
+    .course-image img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-bottom: 1px solid #eee;
+    }
+
+    /* Conteúdo */
+    .course-content {
+        padding: 20px;
+    }
+
+    /* Tag */
+    .course-tag span {
+        display: inline-block;
+        background: #0049fd;
+        color: #fff;
+        font-size: 13px;
+        padding: 4px 12px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+
+    /* Título */
+    .course-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #333;
+        margin: 10px 0;
+    }
+
+    .course-title a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .course-title a:hover {
+        color: #0049fd;
+    }
+
+    /* Autor */
+    .course-author {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 12px;
+    }
+
+    /* Meta */
+    .course-meta {
+        font-size: 13px;
+        color: #888;
+        display: flex;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+
+    /* Botão */
+    .course-btn {
+        display: inline-block;
+        padding: 8px 18px;
+        background: #0049fd;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: background 0.25s ease;
+    }
+
+    .course-btn:hover {
+        background: #0036c7;
+    }
+
+</style>
+<div class="section section-padding mt-n10">
+    <div class="container">
+
+        <div class="row flex-row-reverse gx-10">
+            <div class="col-lg-8">
+                <!-- Blog Wrapper Start -->
+                <div class="blog-wrapper">
+                    @if (Model.Cursos.Any())
+                    {
+                        <div class="row">
+                            @foreach (var curso in Model.Cursos)
+                            {
+                                <div class="col-md-6">
+                                    <!-- Card de Curso -->
+                                    <div class="course-card">
+                                        <!-- Imagem -->
+                                        <div class="course-image">
+                                            <a href="@curso.PaginaUrl">
+                                                <img src="@curso.ImagemUrl" alt="@curso.Nome">
+                                            </a>
+                                        </div>
+
+                                        <!-- Conteúdo -->
+                                        <div class="course-content">
+                                            <!-- Tag -->
+                                            <div class="course-tag">
+                                                <span>@curso.Tag</span>
+                                            </div>
+
+                                            <!-- Título -->
+                                            <h4 class="course-title">
+                                                <a href="@curso.PaginaUrl">@curso.Descricao</a>
+                                            </h4>
+
+                                            <!-- Autor & Professores -->
+                                            <p class="course-author">
+                                                👨‍🏫 @curso.QuantidadeProfessores Professor@(curso.QuantidadeProfessores > 1 ? "es" : "")
+                                            </p>
+
+                                            <!-- Meta -->
+                                            <div class="course-meta">
+                                                <span><i class="icofont-calendar"></i> @curso.DataPublicacao.ToString("dd MMMM, yyyy")</span>
+                                                <span><i class="icofont-user"></i> @curso.Curtidas+ </span>
+                                            </div>
+
+                                            <!-- Botão -->
+                                            <a href="@curso.PaginaUrl" class="course-btn">Ver Detalhes</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            }
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="alert alert-info">
+                            Nenhum curso encontrado com o termo pesquisado.
+                        </div>
+                    }
+                </div>
+                <!-- Blog Wrapper End -->
+
+                <!-- Page Pagination Start -->
+                @if (Model.TotalPaginas > 1)
+                {
+                    <div class="page-pagination"> 
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item @(Model.PaginaAtual == 1 ? "disabled" : "")">
+                                <a class="page-link" href="@Url.Action("Index", new { termoPesquisa = Model.TermoPesquisa, pagina = Model.PaginaAtual - 1 })">
+                                    <i class="icofont-rounded-left"></i>
+                                </a> 
+                            </li>
+
+                            @for (int i = 1; i <= Model.TotalPaginas; i++)
+                            {
+                                <li class="page-item @(i == Model.PaginaAtual ? "active" : "")">
+                                    <a class="page-link" href="@Url.Action("Index", new { termoPesquisa = Model.TermoPesquisa, pagina = i })">@i</a>
+                                </li>
+                            }
+
+                            <li class="page-item @(Model.PaginaAtual == Model.TotalPaginas ? "disabled" : "")">
+                                <a class="page-link" href="@Url.Action("Index", new { termoPesquisa = Model.TermoPesquisa, pagina = Model.PaginaAtual + 1 })">
+                                    <i class="icofont-rounded-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> 
+                }
+                <!-- Page Pagination End -->
+            </div>
+            <div class="col-lg-4">
+
+                <!-- Blog Sidebar Start -->
+                <div class="sidebar">
+
+                    <!-- Sidebar Widget Search Start -->
+                    <div class="sidebar-widget widget-search">
+                        <form method="get" asp-action="Index">
+                            <input type="text" name="termoPesquisa" placeholder="Pesquise por um curso" value="@Model.TermoPesquisa">
+                            <button type="submit"><i class="icofont-search-1"></i></button>
+                        </form>
+                    </div>
+                    <!-- Sidebar Widget Search End -->
+
+                    <!-- Sidebar Widget Tags Start -->
+                    <div class="sidebar-widget">
+                        <h4 class="widget-title">Categorias</h4>
+
+                        <div class="widget-tags">
+                            <ul class="tags-list">
+                                @foreach (var tag in Model.TagsPopulares)
+                                {
+                                    <li><a href="@Url.Action("Index", new { tagFiltro = tag })">@tag</a></li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Sidebar Widget Tags End -->
+
+                    <!-- Sidebar Widget Post Start -->
+                    <div class="sidebar-widget">
+                        <h4 class="widget-title">Best Sellers</h4>
+
+                        <div class="widget-post">
+                            <ul class="post-items">
+                                <li>
+                                    <div class="single-post">
+                                        <div class="post-thumb" style="width: 30%;">
+                                           <img src="~/assets/img/livros/IMG_3027.jpg" alt="Capa do Livro">
+                                        </div>
+                                        <div class="post-content">
+                                            <h5 class="title"><a asp-controller="Home" asp-action="Biblioteca">A Sutil Arte de Ligar o F*da-se</a></h5>
+                                            <span class="date"><i class="icofont-calendar"></i> 13 Junho, 2025</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-post">
+                                        <div class="post-thumb" style="width: 30%;">
+                                            <img src="~/assets/img/livros/IMG_3026.jpg" alt="Capa do Livro">
+                                        </div>
+                                        <div class="post-content">
+                                            <h5 class="title"><a asp-controller="Home" asp-action="Biblioteca">Do Mil ao Milhão – Sem Cortar o Cafezinho</a></h5>
+                                            <span class="date"><i class="icofont-calendar"></i> 13 Junho, 2025</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-post">
+                                        <div class="post-thumb" style="width: 30%;">
+                                            <img src="~/assets/img/livros/IMG_3025.jpg" alt="Capa do Livro">
+                                        </div>
+                                        <div class="post-content">
+                                            <h5 class="title"><a asp-controller="Home" asp-action="Biblioteca">Mindset: A nova psicologia do sucesso</a></h5>
+                                            <span class="date"><i class="icofont-calendar"></i> 13 Junho, 2025</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-post">
+                                        <div class="post-thumb" style="width: 30%;">
+                                            <img src="~/assets/img/livros/IMG_3024.jpg" alt="Capa do Livro">
+                                        </div>
+                                        <div class="post-content">
+                                            <h5 class="title"><a asp-controller="Home" asp-action="Biblioteca">O Poder do Hábito</a></h5>
+                                            <span class="date"><i class="icofont-calendar"></i> 13 Junho, 2025</span>
+                                        </div>
+                                    </div>
+                                </li>
+                               <div class="text-center" style="margin-top: 20px;">
+                                    <a asp-controller="Home" asp-action="Biblioteca" class="btn btn-secondary btn-hover-primary">
+                                        Ver +
+                                    </a>
+                                </div>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Sidebar Widget Post End -->
+                   
+                </div>
+                <!-- Blog Sidebar End -->
+
+            </div>
+        </div>
+
+    </div>
+</div>

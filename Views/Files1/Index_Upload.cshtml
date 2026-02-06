@@ -1,0 +1,74 @@
+@model FileClass
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload de Arquivo</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="file"] {
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .error-message {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="uploadForm" asp-controller="Files1" asp-action="Index" method="post" enctype="multipart/form-data">
+        <input type="file" id="fileInput" name="file" />
+        <hr />
+        <button type="submit" id="uploadButton">Upload</button>
+        <div id="errorMessage" class="error-message" style="display: none;"></div>
+    </form>
+
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', function(event) {
+            var fileInput = document.getElementById('fileInput');
+            var file = fileInput.files[0];
+
+            if (!file || file.type !== 'application/pdf' || file.size > 52428800) { // 50 MB em bytes
+                document.getElementById('errorMessage').style.display = 'block';
+                document.getElementById('errorMessage').innerText = 'Por favor, selecione um arquivo PDF menor que 50 MB.';
+                event.preventDefault(); // Evita que o formulário seja enviado
+            }
+        });
+    </script>
+</body>
+</html>
+

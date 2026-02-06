@@ -1,0 +1,140 @@
+.mensagem-sucesso {
+    color: #fff;
+    background-color: #28a745;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.mensagem-erro {
+    color: #fff;
+    background-color: #dc3545;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.admin-tab-menu-centro {
+    z-index: 9;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* espaço entre os itens */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding: 25px 25px;
+    background-color: #28313d;
+    color: white;
+    border-left: solid;
+
+}
+
+.admin-tab-menu-centro a:hover {
+    color: #0049fd;
+}
+
+.notification-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+}
+
+.notification-item:hover {
+    background-color: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.notification-icon {
+    margin-right: 1.2rem;
+    flex-shrink: 0;
+}
+
+.notification-content {
+    flex-grow: 1;
+    min-width: 0; /* Previne overflow */
+}
+
+.notification-title {
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+.notification-message {
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+.notification-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 1rem;
+    flex-shrink: 0;
+}
+
+.notification-time {
+    font-size: 0.75rem;
+}
+
+.notification-badge {
+    margin-top: 0.25rem;
+    font-size: 0.65rem;
+    padding: 0.25rem 0.5rem;
+    color: black;
+}
+
+.notification-close {
+    padding: 0.25rem;
+    margin-right: 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1;
+    color: #6c757d;
+    background: transparent;
+    border: none;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.notification-close:hover {
+    opacity: 1;
+    color: #dc3545;
+}
+
+.notification-meta {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+.text-md{ color: #212832;}
+
+/* Tamanho padrão em todas as telas */
+.logo-img-estudante {
+  width: 50px;
+  height: 50px;
+}
+
+/* Esconde em telas até 380px */
+@media (max-width: 420px) {
+  .logo-img-estudante {
+    display: none;
+  }
+  .login-header-wrapper .login-header-logo:first-of-type{
+    display: none;
+  }
+}

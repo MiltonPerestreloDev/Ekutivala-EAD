@@ -1,0 +1,530 @@
+﻿@{
+    ViewData["Title"] = "";
+    Layout = "_LayoutBase";
+}
+    <!-- Header 
+    ============================================= -->
+    <header>
+        <!-- Start Navigation -->
+        <nav class="navbar mobile-sidenav inc-shape navbar-sticky navbar-default validnavs dark">
+
+            <div class="container d-flex justify-content-between align-items-center">
+
+
+                <div class="navbar-brand-left">
+                    <!-- Start Header Navigation -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" >
+                        <img src="~/assets/img/Logotipo-Principal.png" class="logo" alt="Logo">
+                        </a>
+                    </div>
+                    <!-- End Header Navigation -->
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+
+                    <img src="~/assets/img/logo.png" alt="Logo" style="width: 70%;">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-times"></i>
+                    </button>
+
+                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li>
+                            <a asp-area="" asp-controller="Home" asp-action="Index" class="active">Home</a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="Home" asp-action="Cursos">Cursos</a>
+                        </li>
+                        <li class="dropdown megamenu-fw">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Professores</a>
+                            <ul class="dropdown-menu megamenu-content" role="menu">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-menu col-md-3">
+                                            <h6 class="title">Inglês</h6>
+                                            <div class="content">
+                                                <ul class="menu-col">
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof06">Faustino Chingueve</a></li>
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof07">Paulo Bingue</a></li>
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof02">Justino Essuvo</a></li>
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof01">Sebasitão de Oliveira</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                         <!-- end col-3 -->
+                                        <div class="col-menu col-md-2">
+                                            <h6 class="title">Francês</h6>
+                                            <div class="content">
+                                                <ul class="menu-col">
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof05">Armando Baptista</a></li>
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof11">Mujinja Pombo</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- end col-3 -->
+                                        <div class="col-menu col-md-2">
+                                            <h6 class="title">Umbundu</h6>
+                                            <div class="content">
+                                                <ul class="menu-col"> 
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof10">Patrício Kavela</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- end col-3 -->
+                                        <div class="col-menu col-md-2">
+                                            <h6 class="title">Coreano</h6>
+                                            <div class="content">
+                                                <ul class="menu-col">
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof09">Joiza Victor</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- end col-3 -->
+                                        <div class="col-menu col-md-2">
+                                            <h6 class="title">Espanhol</h6>
+                                            <div class="content">
+                                                <ul class="menu-col">
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof03">Surenka Quiosa</a></li>
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof04">Ricardo Gonçalves</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- end col-3 -->
+                                    </div>
+                                    <!-- end row -->
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="Home" asp-action="Comissao" class="">Comissão Executiva</a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="Home" asp-action="Biblioteca" class="">Biblioteca</a>
+                        </li>
+                       
+                        <li>
+                            <a asp-area="" asp-controller="Home" asp-action="Contactos">Contacto</a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="btn text-end dropdown-toggle entrar-btn" data-toggle="dropdown" href="#">
+                                <i class="fas fa-user"></i> Entrar
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a asp-area="" asp-controller="Home" asp-action="Login">Login</a></li>
+                                <li><a asp-area="" asp-controller="Home" asp-action="Cadastrar">Cadastrar-se</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+
+                <!-- Main Nav -->
+            </div>
+            <!-- Overlay screen for menu -->
+            <div class="overlay-screen"></div>
+            <!-- End Overlay screen for menu -->
+
+        </nav>
+        <!-- End Navigation -->
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Breadcrumb 
+    ============================================= -->
+    <div class="breadcrumb-area shadow dark text-center bg-fixed text-light" style="background-image: url(../assets/img/banner/12.png);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Bem-Vindo a nossa Biblioteca</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#">Página</a></li>
+                        <li class="active">Biblioteca</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumb -->
+
+    <!-- Start Biblioteca 
+    ============================================= -->
+    <div class="popular-courses default-padding bottom-less without-carousel">
+        <div class="container">
+            <div class="popular-courses-items bottom-price">
+                <div class="row">
+                    <!-- Single Book Item -->
+                        <div class="col-lg-4 col-md-6 equal-height">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="livro01.html">
+                                        <img src="~/assets/img/livros/IMG_3024.jpg" alt="Capa do Livro">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <table class="table">
+                                        <tr>
+                                            <th>Título:</th>
+                                            <td><a href="book-details.html">O Poder do Hábito</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Autor:</th>
+                                            <td>Charles Duhigg</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Preço:</th>
+                                            <td>3.000 KZ</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Disponível:</th>
+                                            <td>Livro Físico</td>
+                                        </tr>
+                                         <tr>
+                                            <th>Categoria:</th>
+                                            <td>historia</td>
+                                        </tr>
+
+
+                                    </table>
+                                    <div>
+                                        <a href="livro01.html" class="btn btn-dark effect btn-sm">
+                                            <i class="fas fa-info-circle"></i> Ver Mais
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- End Single Book Item -->
+
+                    <!-- Single Book Item -->
+                        <div class="col-lg-4 col-md-6 equal-height">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="livro01.html">
+                                        <img src="~/assets/img/livros/IMG_3025.jpg" alt="Capa do Livro">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <table class="table">
+                                        <tr>
+                                            <th>Título:</th>
+                                            <td><a href="book-details.html">O Poder do Hábito</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Autor:</th>
+                                            <td>Charles Duhigg</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Preço:</th>
+                                            <td>3.000 KZ</td>
+                                        </tr>
+                                          <tr>
+                                            <th>Disponível:</th>
+                                            <td>Livro Físico</td>
+                                        </tr>
+                                         <tr>
+                                            <th>Categoria:</th>
+                                            <td>historia</td>
+                                        </tr>
+                                    </table>
+                                    <div>
+                                        <a href="livro01.html" class="btn btn-dark effect btn-sm">
+                                            <i class="fas fa-info-circle"></i> Ver Mais
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- End Single Book Item -->
+                    <!-- Single Book Item -->
+                        <div class="col-lg-4 col-md-6 equal-height">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="livro01.html">
+                                        <img src="~/assets/img/livros/IMG_3026.jpg" alt="Capa do Livro">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <table class="table">
+                                        <tr>
+                                            <th>Título:</th>
+                                            <td><a href="book-details.html">O Poder do Hábito</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Autor:</th>
+                                            <td>Charles Duhigg</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Preço:</th>
+                                            <td>3.000 KZ</td>
+                                        </tr>
+                                           <tr>
+                                            <th>Disponível:</th>
+                                            <td>Livro Físico</td>
+                                        </tr>
+                                         <tr>
+                                            <th>Categoria:</th>
+                                            <td>historia</td>
+                                        </tr>
+                                    </table>
+                                    <div>
+                                        <a href="livro01.html" class="btn btn-dark effect btn-sm">
+                                            <i class="fas fa-info-circle"></i> Ver Mais
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- End Single Book Item -->
+                    <!-- Single Book Item -->
+                        <div class="col-lg-4 col-md-6 equal-height">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="livro01.html">
+                                        <img src="~/assets/img/livros/IMG_3027.jpg" alt="Capa do Livro">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <table class="table">
+                                        <tr>
+                                            <th>Título:</th>
+                                            <td><a href="book-details.html">O Poder do Hábito</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Autor:</th>
+                                            <td>Charles Duhigg</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Preço:</th>
+                                            <td>3.000 KZ</td>
+                                        </tr>
+                                           <tr>
+                                            <th>Disponível:</th>
+                                            <td>Livro Físico</td>
+                                        </tr>
+                                         <tr>
+                                            <th>Categoria:</th>
+                                            <td>historia</td>
+                                        </tr>
+                                    </table>
+                                    <div>
+                                        <a href="livro01.html" class="btn btn-dark effect btn-sm">
+                                            <i class="fas fa-info-circle"></i> Ver Mais
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- End Single Book Item -->
+                    <!-- Single Book Item -->
+                        <div class="col-lg-4 col-md-6 equal-height">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="livro01.html">
+                                        <img src="~/assets/img/livros/IMG_3028.jpg" alt="Capa do Livro">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <table class="table">
+                                        <tr>
+                                            <th>Título:</th>
+                                            <td><a href="book-details.html">O Poder do Hábito</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Autor:</th>
+                                            <td>Charles Duhigg</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Preço:</th>
+                                            <td>3.000 KZ</td>
+                                        </tr>
+                                           <tr>
+                                            <th>Disponível:</th>
+                                            <td>Livro Físico</td>
+                                        </tr>
+                                         <tr>
+                                            <th>Categoria:</th>
+                                            <td>historia</td>
+                                        </tr>
+                                    </table>
+                                    <div>
+                                        <a href="livro01.html" class="btn btn-dark effect btn-sm">
+                                            <i class="fas fa-info-circle"></i> Ver Mais
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- End Single Book Item -->
+                    <!-- Single Book Item -->
+                        <div class="col-lg-4 col-md-6 equal-height">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="livro01.html">
+                                        <img src="~/assets/img/livros/IMG_3029.WEBP" alt="Capa do Livro">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <table class="table">
+                                        <tr>
+                                            <th>Título:</th>
+                                            <td><a href="book-details.html">O Poder do Hábito</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Autor:</th>
+                                            <td>Charles Duhigg</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Preço:</th>
+                                            <td>3.000 KZ</td>
+                                        </tr>
+                                           <tr>
+                                            <th>Disponível:</th>
+                                            <td>Livro Físico</td>
+                                        </tr>
+                                         <tr>
+                                            <th>Categoria:</th>
+                                            <td>historia</td>
+                                        </tr>
+                                    </table>
+                                    <div>
+                                        <a href="livro01.html" class="btn btn-dark effect btn-sm">
+                                            <i class="fas fa-info-circle"></i> Ver Mais
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- End Single Book Item -->
+                    <!-- Single Book Item -->
+                        <div class="col-lg-4 col-md-6 equal-height">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="livro01.html">
+                                        <img src="~/assets/img/livros/IMG_3030.jpg" alt="Capa do Livro">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <table class="table">
+                                        <tr>
+                                            <th>Título:</th>
+                                            <td><a href="book-details.html">O Poder do Hábito</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Autor:</th>
+                                            <td>Charles Duhigg</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Preço:</th>
+                                            <td>3.000 KZ</td>
+                                        </tr>
+                                           <tr>
+                                            <th>Disponível:</th>
+                                            <td>Livro Físico</td>
+                                        </tr>
+                                         <tr>
+                                            <th>Categoria:</th>
+                                            <td>historia</td>
+                                        </tr>
+                                    </table>
+                                    <div>
+                                        <a href="livro01.html" class="btn btn-dark effect btn-sm">
+                                            <i class="fas fa-info-circle"></i> Ver Mais
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- End Single Book Item -->
+
+                    <!-- Single Book Item -->
+                        <div class="col-lg-4 col-md-6 equal-height">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="livro01.html">
+                                        <img src="~/assets/img/livros/IMG_3030.jpg" alt="Capa do Livro">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <table class="table">
+                                        <tr>
+                                            <th>Título:</th>
+                                            <td><a href="book-details.html">O Poder do Hábito</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Autor:</th>
+                                            <td>Charles Duhigg</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Preço:</th>
+                                            <td>3.000 KZ</td>
+                                        </tr>
+                                           <tr>
+                                            <th>Disponível:</th>
+                                            <td>Livro Físico</td>
+                                        </tr>
+                                         <tr>
+                                            <th>Categoria:</th>
+                                            <td>historia</td>
+                                        </tr>
+                                    </table>
+                                    <div>
+                                        <a href="livro01.html" class="btn btn-dark effect btn-sm">
+                                            <i class="fas fa-info-circle"></i> Ver Mais
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- End Single Book Item -->
+
+                    <!-- Single Book Item -->
+                        <div class="col-lg-4 col-md-6 equal-height">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="livro01.html">
+                                        <img src="~/assets/img/livros/IMG_3030.jpg" alt="Capa do Livro">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <table class="table">
+                                        <tr>
+                                            <th>Título:</th>
+                                            <td><a href="book-details.html">O Poder do Hábito</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Autor:</th>
+                                            <td>Charles Duhigg</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Preço:</th>
+                                            <td>3.000 KZ</td>
+                                        </tr>
+                                           <tr>
+                                            <th>Disponível:</th>
+                                            <td>Livro Físico</td>
+                                        </tr>
+                                         <tr>
+                                            <th>Categoria:</th>
+                                            <td>historia</td>
+                                        </tr>
+                                    </table>
+                                    <div>
+                                        <a href="livro01.html" class="btn btn-dark effect btn-sm">
+                                            <i class="fas fa-info-circle"></i> Ver Mais
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- End Single Book Item -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Biblioteca -->

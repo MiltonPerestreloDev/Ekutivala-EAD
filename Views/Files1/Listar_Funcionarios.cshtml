@@ -1,0 +1,127 @@
+@model IEnumerable<FuncionarioModel>
+@using Microsoft.AspNetCore.Http;
+
+@{
+    ViewData["Title"] = "Ekutivala";
+    ViewContext.RouteData.Values["action"] = "Index";
+    Layout = "_Dashboard_Layout";
+
+    
+}
+
+<main>
+    <div class="container-fluid px-4">
+        <h1 class="mt-4">Funcionários</h1>
+        
+        <div class="row">
+            <div class="col-xl-3 col-md-6">
+                <div class="card bg-primary text-white mb-4">
+                    <div class="card-body d-flex align-items-center justify-content-between">
+                        <span>Cadastrar Novo Funcionário</span>
+                        <a class="small text-white stretched-link" asp-action="Cadastrar_Funcionario">
+                            <div class="small text-white"><i class="fas fa-plus-circle"></i></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-user-tie me-1"></i>
+                Lista de Funcionários
+            </div>
+            <div class="card-body">
+                <table id="Funcionario" class="table table-striped table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>E-mail</th>
+                            <th>Acesso</th>
+                            <th>Status</th>
+                            <th>Data Cadastro</th>
+                            <th>Operações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var funcionario in Model)
+                        {
+                            <tr>
+                                <td>@funcionario.IdFunc</td>
+                                <td>@funcionario.NomeFunc</td>
+                                <td>@funcionario.EmailFunc</td>
+                                <td>
+                                    <span class="badge 
+                                        @(funcionario.AcessoFunc == "A" ? "bg-danger" : 
+                                          funcionario.AcessoFunc == "B" ? "bg-warning" : 
+                                          "bg-info")">
+                                        @funcionario.AcessoFunc
+                                    </span>
+                                </td>
+                                <td>
+                                    <span class="badge 
+                                        @(funcionario.StatusFunc == "ATIVO" ? "bg-success" : 
+                                          funcionario.StatusFunc == "INATIVO" ? "bg-secondary" : 
+                                          "bg-danger")">
+                                        @funcionario.StatusFunc
+                                    </span>
+                                </td>
+                                <td>@funcionario.DataCadastroFunc.ToString("dd/MM/yyyy HH:mm")</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <a asp-action="Editar_Funcionario" asp-route-id="@funcionario.IdFunc" 
+                                           class="btn btn-sm btn-warning">
+                                            <i class="fas fa-edit"></i> Editar
+                                        </a>
+                                        <a asp-action="Editar_Funcionario" asp-route-id="@funcionario.IdFunc" 
+                                           class="btn btn-sm btn-danger"> <i class= "fas fa-times"></i> 
+                                           Inativar
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+
+@section Scripts {
+    <script>
+        $(document).ready(function (){
+            $('#Funcionario').DataTable({
+                "language": {
+                    "emptyTable": "Nenhum funcionário cadastrado",
+                    "lengthMenu": "_MENU_ resultados por página",
+                    "info": "Mostrando _START_ até _END_ de _TOTAL_ funcionários",
+                    "infoEmpty": "Mostrando 0 até 0 de 0 funcionários",
+                    "infoFiltered": "(Filtrados de _MAX_ funcionários)",
+                    "infoPostFix": "",
+                    "infoThousands": ".",
+                    "loadingRecords": "Carregando...",
+                    "processing": "Processando...",
+                    "zeroRecords": "Nenhum funcionário encontrado",
+                    "search": "Pesquisar:",
+                    "paginate": {
+                        "next": "Próximo",
+                        "previous": "Anterior",
+                        "first": "Primeiro",
+                        "last": "Último"
+                    },
+                    "aria": {
+                        "sortAscending": "Ordenar coluna ascendente",
+                        "sortDescending": "Ordenar coluna descendente"
+                    }
+                },
+                "columnDefs": [
+                    { "orderable": false, "targets": [6] } // Desabilita ordenação na coluna de operações
+                ],
+                "order": [[5, "desc"]] // Ordena por data de cadastro (decrescente)
+            });
+        });
+    </script>
+
+}

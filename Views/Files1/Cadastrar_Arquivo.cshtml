@@ -1,0 +1,108 @@
+@model LivroModel
+@using Microsoft.AspNetCore.Http;
+
+@{
+    ViewData["Title"] = "Ekutivala";
+    ViewContext.RouteData.Values["action"] = "Index";
+    Layout = "_Dashboard_Layout";
+}
+
+<main>
+    <div class="container-fluid px-4">
+        <h1 class="mt-4">Cadastrar Novo Livro</h1>
+        
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-book me-1"></i>
+                Informações do Livro
+            </div>
+            <div class="card-body">
+                <form asp-action="Cadastrar_Arquivo" asp-controller="Files1" method="post">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group mb-3">
+                                <label asp-for="Titulo" class="form-label"></label>
+                                <input asp-for="Titulo" class="form-control" required/>
+                                <span asp-validation-for="Titulo" class="text-danger"></span>
+                            </div>
+                            
+                            <div class="form-group mb-3">
+                                <label asp-for="Autor" class="form-label"></label>
+                                <input asp-for="Autor" class="form-control" required/>
+                                <span asp-validation-for="Autor" class="text-danger"></span>
+                            </div>
+                            
+                            <div class="form-group mb-3">
+                                <label asp-for="Preco" class="form-label"></label>
+                                <input asp-for="Preco" class="form-control" type="number" step="0.01" required/>
+                                <span asp-validation-for="Preco" class="text-danger"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="form-group mb-3">
+                                <label asp-for="Formato" class="form-label"></label>
+                                <select asp-for="Formato" class="form-select" required>
+                                    <option value="">Selecione...</option>
+                                    <option value="Físico">Físico</option>
+                                    <option value="Digital">Digital</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group mb-3">
+                                <label asp-for="Categoria" class="form-label"></label>
+                                <input asp-for="Categoria" class="form-control" required/>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label asp-for="LinkCaminho" class="form-label">Link do Google Drive</label>
+                                <input asp-for="LinkCaminho" class="form-control" required/>
+                            </div>
+                            
+                        </div>
+
+                        <div class="col-12">
+                            <div class="alert alert-info mb-3" role="alert">
+                                <p class="mb-0">
+                                    <strong>Nota:</strong> Em caso de um livro gratuito preencha o campo 
+                                    <span class="fw-bold">Categoria</span> com 
+                                    <span class="badge bg-success">Gratuito</span> 
+                                    e preço com 
+                                    <span class="badge bg-primary">0</span>.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-group mb-3">
+                                <label class="form-label">Capa do Livro</label>
+                                @* Exibe o caminho da imagem se já estiver carregado *@
+                                @if (!string.IsNullOrEmpty(ViewBag.CapaPath as string) || !string.IsNullOrEmpty(Model?.ImagemCaminho))
+                                {
+                                    var caminho = ViewBag.CapaPath ?? Model.ImagemCaminho;
+
+                                    @* Exibe miniatura da imagem (opcional) *@
+                                    <div class="mt-2">
+                                        <img src="http://localhost:5043/@caminho" alt="Capa do Livro" style="max-height: 150px; border-radius: 8px;" />
+                                    </div>
+                                    <input value="http://localhost:5043/@caminho" asp-for="ImagemCaminho" hidden required/>
+                                }
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+                        <a asp-action="Listar_Arquivo" class="btn btn-secondary me-md-2">
+                            <i class="fas fa-arrow-left"></i> Voltar
+                        </a>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-save"></i> Cadastrar Livro
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>

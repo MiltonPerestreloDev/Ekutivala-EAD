@@ -1,0 +1,110 @@
+﻿@model VendaCursoModel
+
+@{
+    ViewData["Title"] = "Pagamento por Referência";
+    Layout = "_LayoutBasePagar";
+}
+<style>
+    .sidebar-info ul li a {
+        display: block;
+        padding: 8px 12px;
+        color: #333;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        border-radius: 4px;
+    }
+
+    .sidebar-info ul li a:hover {
+        background-color: #002147;
+        color: var(--white);
+    }
+
+    .meta ul li {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        display: block !important;
+    }
+
+</style>
+
+
+   <!-- Start Pagar 
+    ============================================= -->
+   <section class="invoice-area py-5" style="font-family: Arial, sans-serif; background-color: #f9f9f9;">
+      <div class="container" style="max-width: 800px; margin: auto; background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+
+        <!-- Topo -->
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-4 gap-3">
+          <img src="~/assets/img/Logotipo-Principal.png" alt="Logo" style="height: 60px;">
+          <div style="text-align: right;">
+            <h4 style="margin: 0;">Guia de Pagamento</h4>
+            <small><strong>Número:</strong> @Model.Fatura</small><br>
+            <small><strong>Nome:</strong> @Model.NomeCliente</small><br>
+            <small><strong>Email:</strong> @Model.EmailCliente</small><br>
+            <small><strong>Telefone:</strong> @Model.TelefoneCliente</small><br>
+            <small><strong>Data:</strong> @DateTime.Now.ToString("dd-MM-yyyy")</small><br>
+            <small><strong>Moeda:</strong> KZ</small>
+          </div>
+        </div>
+
+        <!-- Produto -->
+        <div class="mb-4">
+          <h5 style="margin-bottom: 10px;">Resumo do Produto</h5>
+          <table style="width: 100%; border-collapse: collapse;">
+            <thead>
+              <tr style="background-color: #f1f1f1;">
+                <th style="padding: 8px; border: 1px solid #ccc;">Produto</th>
+                <th style="padding: 8px; border: 1px solid #ccc;">Preço</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding: 8px; border: 1px solid #ccc;">@Model.Curso.Nome</td>
+                <td style="padding: 8px; border: 1px solid #ccc;">@Model.Curso.Preco.ToString("N0") KZ</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Formas de pagamento -->
+        <div class="mb-4">
+          <h5 style="margin-bottom: 10px;">Formas de Pagamento</h5>
+          <ul style="padding-left: 18px;">
+            <li><strong>Referência Multicaixa:</strong> Pague através do seu banco ou app, utilizando o número de referência enviado.</li>
+            </ul>
+        </div>
+
+        <!-- Instruções -->
+        <div style="text-align: left;" class="mb-4">
+          <p><strong>Referência:</strong> ****</p>
+        </div>
+
+        <!-- Observações -->
+        <div style="border-top: 1px solid #eee; padding-top: 20px;">
+            <p>Estamos quase lá! Após realizar o pagamento, envie o comprovativo para os nossos contactos:</p>
+            <p>
+                E-mail: <strong>ekitivala.compras@gmail.com</strong><br>
+                WhatsApp: <strong>923 923 923</strong>
+            </p>
+            <!-- Botão para gerar PDF -->
+              <div class="text-center mt-4 py-4" style="background-color: #f8f9fa; border-radius: 10px;">
+                  <p class="text-muted mb-2">Guarde seu comprovativo para apresentar quando solicitado</p>
+                  <button id="btnGerarPDF" class="btn btn-success btn-lg">
+                      <i class="fas fa-file-pdf"></i> Baixar Recibo em PDF
+                  </button>
+                  <small class="d-block mt-2 text-muted">Compatível com celular e computador</small>
+              </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Biblioteca -->
+
+<script>
+    // Abrir o modal automaticamente ao carregar a página
+    document.addEventListener("DOMContentLoaded", function () {
+        var avisoModal = new bootstrap.Modal(document.getElementById('avisoCompra'));
+        avisoModal.show();
+    });
+</script>

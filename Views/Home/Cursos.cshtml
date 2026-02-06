@@ -1,0 +1,360 @@
+﻿@model ListaCursosViewModel
+
+@{
+    ViewData["Title"] = "Cursos";
+    Layout = "_LayoutBase";
+}
+<style>
+    .sidebar-info ul li a {
+        display: block;
+        padding: 8px 12px;
+        color: #333;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        border-radius: 4px;
+    }
+
+    .sidebar-info ul li a:hover {
+        background-color: #326eb2;
+        color: var(--white);
+    }
+
+    .equal-height {
+        display: flex;
+    }
+    .item_curso {
+        margin-bottom: 30px;
+        border: 1px solid #eee;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+    .item_curso:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .thumb img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .info {
+        padding: 15px;
+    }
+    .course-meta {
+        margin-top: 10px;
+        font-size: 12px;
+        color: #666;
+    }
+    .course-meta span {
+        margin-right: 10px;
+    }
+    .badge {
+        margin-right: 5px;
+    }
+
+</style>
+    <!-- Header 
+    ============================================= -->
+    <header>
+        <!-- Start Navigation -->
+        <nav class="navbar mobile-sidenav inc-shape navbar-sticky navbar-default validnavs dark">
+
+            <div class="container d-flex justify-content-between align-items-center">
+
+
+                <div class="navbar-brand-left">
+                    <!-- Start Header Navigation -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" >
+                        <img src="~/assets/img/Logotipo-Principal.png" class="logo" alt="Logo">
+                        </a>
+                    </div>
+                    <!-- End Header Navigation -->
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+
+                    <img src="~/assets/img/logo.png" alt="Logo" style="width: 70%;">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-times"></i>
+                    </button>
+
+                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li>
+                            <a asp-area="" asp-controller="Home" asp-action="Index" class="active">Home</a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="Home" asp-action="Cursos">Cursos</a>
+                        </li>
+                        <li class="dropdown megamenu-fw">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Professores</a>
+                            <ul class="dropdown-menu megamenu-content" role="menu">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-menu col-md-3">
+                                            <h6 class="title">Inglês</h6>
+                                            <div class="content">
+                                                <ul class="menu-col">
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof06">Faustino Chingueve</a></li>
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof07">Paulo Bingue</a></li>
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof02">Justino Essuvo</a></li>
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof01">Sebasitão de Oliveira</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                         <!-- end col-3 -->
+                                        <div class="col-menu col-md-2">
+                                            <h6 class="title">Francês</h6>
+                                            <div class="content">
+                                                <ul class="menu-col">
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof05">Armando Baptista</a></li>
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof11">Mujinja Pombo</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- end col-3 -->
+                                        <div class="col-menu col-md-2">
+                                            <h6 class="title">Umbundu</h6>
+                                            <div class="content">
+                                                <ul class="menu-col"> 
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof10">Patrício Kavela</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- end col-3 -->
+                                        <div class="col-menu col-md-2">
+                                            <h6 class="title">Coreano</h6>
+                                            <div class="content">
+                                                <ul class="menu-col">
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof09">Joiza Victor</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- end col-3 -->
+                                        <div class="col-menu col-md-2">
+                                            <h6 class="title">Espanhol</h6>
+                                            <div class="content">
+                                                <ul class="menu-col">
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof03">Surenka Quiosa</a></li>
+                                                    <li><a asp-area="" asp-controller="Home" asp-action="Prof04">Ricardo Gonçalves</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- end col-3 -->
+                                    </div>
+                                    <!-- end row -->
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="Home" asp-action="Comissao" class="">Comissão Executiva</a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="Home" asp-action="Biblioteca" class="">Biblioteca</a>
+                        </li>
+                       
+                        <li>
+                            <a asp-area="" asp-controller="Home" asp-action="Contactos">Contacto</a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="btn text-end dropdown-toggle entrar-btn" data-toggle="dropdown" href="#">
+                                <i class="fas fa-user"></i> Entrar
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a asp-area="" asp-controller="Home" asp-action="Login">Login</a></li>
+                                <li><a asp-area="" asp-controller="Home" asp-action="Cadastrar">Cadastrar-se</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+
+                <!-- Main Nav -->
+            </div>
+            <!-- Overlay screen for menu -->
+            <div class="overlay-screen"></div>
+            <!-- End Overlay screen for menu -->
+
+        </nav>
+        <!-- End Navigation -->
+    </header>
+    <!-- End Header -->
+
+
+    <!-- Start Breadcrumb 
+    ============================================= -->
+    <div class="breadcrumb-area shadow dark text-center bg-fixed text-light" style="background-image: url(../assets/img/banner/13.png);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Todos os Cursos</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#">Página</a></li>
+                        <li class="active">Cursos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumb -->
+
+    <!-- Start Popular Courses 
+    ============================================= -->
+    <div class="blog-area full-blog left-sidebar full-blog default-padding">
+        <div class="container">
+            <div class="row">
+    <div class="blog-items">
+        <div class="blog-content col-lg-8">
+            <div class="popular-courses-items bottom-price">
+                <div class="row">
+                    <!-- Loop através dos cursos -->
+                    @foreach (var curso in Model.Cursos)
+                    {
+                        <div class="col-md-6 equal-height">
+                            <div class="item item_curso">
+                                <div class="thumb">
+                                    <a asp-area="" asp-controller="Home" asp-action="Login">
+                                        <img src="@curso.ImagemUrl" alt="@curso.Nome">
+                                    </a>
+                                    <div class="overlay">
+                                        <a class="btn btn-theme effect btn-sm" asp-area="" asp-controller="Home" asp-action="Login" >
+                                            <i class="fas fa-chart-bar"></i> Ver Detalhes
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <h4><a asp-area="" asp-controller="Home" asp-action="Login">@curso.Nome</a></h4>
+                                    <div class="cats">
+                                        <span class="badge bg-primary">@curso.Tag</span>
+                                        <span class="badge bg-secondary">@curso.QuantidadeProfessores professores</span>
+                                    </div>
+
+                                    <p>@curso.Descricao</p>
+                                    
+                                    <div class="course-meta">
+                                        <span><i class="fas fa-calendar"></i> @curso.DataPublicacao.ToString("dd/MM/yyyy")</span>
+                                        <span><i class="fas fa-user"></i> @curso.Curtidas +</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    
+                    @if (Model.Cursos.Count == 0)
+                    {
+                        <div class="col-12">
+                            <div class="alert alert-info">
+                                Nenhum curso encontrado com os filtros aplicados.
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            @if (Model.TotalPaginas > 1)
+            {
+                <div class="row">
+                    <div class="col-lg-12 pagi-area">
+                        <nav aria-label="navigation">
+                            <ul class="pagination">
+                                <li class="page-item @(Model.PaginaAtual == 1 ? "disabled" : "")">
+                                    <a class="page-link" asp-action="Cursos" 
+                                       asp-route-termoPesquisa="@Model.TermoPesquisa"
+                                       asp-route-tagFiltro="@Model.TagSelecionada"
+                                       asp-route-pagina="@(Model.PaginaAtual - 1)">Anterior</a>
+                                </li>
+                                
+                                @for (int i = 1; i <= Model.TotalPaginas; i++)
+                                {
+                                    <li class="page-item @(i == Model.PaginaAtual ? "active" : "")">
+                                        <a class="page-link" asp-action="Cursos" 
+                                           asp-route-termoPesquisa="@Model.TermoPesquisa"
+                                           asp-route-tagFiltro="@Model.TagSelecionada"
+                                           asp-route-pagina="@i">@i</a>
+                                    </li>
+                                }
+                                
+                                <li class="page-item @(Model.PaginaAtual == Model.TotalPaginas ? "disabled" : "")">
+                                    <a class="page-link" asp-action="Cursos" 
+                                       asp-route-termoPesquisa="@Model.TermoPesquisa"
+                                       asp-route-tagFiltro="@Model.TagSelecionada"
+                                       asp-route-pagina="@(Model.PaginaAtual + 1)">Próxima</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            }
+        </div>
+        
+        <!-- Start Sidebar -->
+        <div class="sidebar col-lg-4">
+            <aside>
+                <!-- Start Sidebar Item -->
+                <div class="sidebar-item search">
+                    <div class="title">
+                        <h4>Pesquisar Cursos</h4>
+                    </div>
+                    <div class="sidebar-info">
+                        <form method="get" asp-action="Cursos">
+                            <input type="text" name="termoPesquisa" class="form-control" value="@Model.TermoPesquisa" placeholder="Digite para pesquisar...">
+                            <input type="hidden" name="tagFiltro" value="@Model.TagSelecionada">
+                            <input type="submit" value="Pesquisar">
+                        </form>
+                    </div>
+                </div>
+                <!-- End Sidebar Item -->
+
+                <!-- Start Sidebar Item -->
+                <div class="sidebar-item tags">
+                    <div class="title">
+                        <h4>Categorias Populares</h4>
+                    </div>
+                    <div class="sidebar-info">
+                        <ul>
+                            <li><a asp-action="Cursos" 
+                                  asp-route-termoPesquisa="@Model.TermoPesquisa"
+                                  asp-route-tagFiltro=""
+                                  class="@(string.IsNullOrEmpty(Model.TagSelecionada) ? "active" : "")">Todas</a></li>
+                                    @foreach (var tag in Model.TagsPopulares)
+                                    {
+                                        <li>
+                                            <a asp-action="Cursos" 
+                                            asp-route-termoPesquisa="@Model.TermoPesquisa"
+                                            asp-route-tagFiltro="@tag"
+                                            class="@(tag == Model.TagSelecionada ? "active" : "")">@tag</a>
+                                        </li>
+                                    }
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Sidebar Item -->
+
+                <!-- Start Sidebar Item -->
+                <div class="sidebar-item">
+                    <div class="title">
+                        <h4>Estatísticas</h4>
+                    </div>
+                    <div class="sidebar-info">
+                        <div class="stats">
+                            <p><strong>Total de Cursos:</strong> @Model.TotalCursos</p>
+                            <p><strong>Página:</strong> @Model.PaginaAtual de @Model.TotalPaginas</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Sidebar Item -->
+            </aside>
+        </div>
+        <!-- End Start Sidebar -->
+    </div>
+</div>
+        </div>
+    </div>
+    <!-- End Popular Courses -->

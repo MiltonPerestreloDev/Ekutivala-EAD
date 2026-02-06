@@ -1,0 +1,313 @@
+﻿@model VendaCursoModel
+
+@{
+    ViewData["Title"] = "Detalhes do Curso";
+    Layout = "_LayoutBase";
+
+    // Gerar código de fatura antes de salvar
+        Random rnd = new Random();
+        string numeros1 = rnd.Next(0, 100).ToString("D2");
+        string letras = new string(Enumerable.Range(0, 2)
+                                            .Select(_ => (char)rnd.Next('A', 'Z' + 1))
+                                            .ToArray());
+        string numeros2 = rnd.Next(0, 1000).ToString("D3");
+        string fatura_save = $"EKU{numeros1}{letras}{numeros2}";
+}
+<style>
+    .sidebar-info ul li a {
+        display: block;
+        padding: 8px 12px;
+        color: #333;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        border-radius: 4px;
+    }
+
+    .sidebar-info ul li a:hover {
+        background-color: #002147;
+        color: var(--white);
+    }
+
+    .meta ul li {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        display: block !important;
+    }
+
+</style>
+
+    <!-- Header 
+    ============================================= -->
+    <header>
+        <!-- Start Navigation -->
+        <nav class="navbar mobile-sidenav inc-shape navbar-sticky navbar-default validnavs dark">
+
+            <div class="container d-flex justify-content-between align-items-center">
+
+
+                <div class="navbar-brand-left">
+                    <!-- Start Header Navigation -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" >
+                        <img src="~/assets/img/Logotipo-Principal.png" class="logo" alt="Logo">
+                        </a>
+                    </div>
+                    <!-- End Header Navigation -->
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+
+                    <img src="~/assets/img/logo.png" alt="Logo" style="width: 70%;">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-times"></i>
+                    </button>
+
+                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li>
+                            <a asp-area="" asp-controller="Estudante" asp-action="Index" class="active"> <i class="fa fa-arrow-left"></i>&nbsp; Voltar</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+
+                <!-- Main Nav -->
+            </div>
+            <!-- Overlay screen for menu -->
+            <div class="overlay-screen"></div>
+            <!-- End Overlay screen for menu -->
+
+        </nav>
+        <!-- End Navigation -->
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Breadcrumb 
+    ============================================= -->
+    <div class="breadcrumb-area shadow dark text-center bg-fixed text-light" style="background-image: url('http://localhost:5043/@Model.Curso.ImagemUrl.Replace("\\", "/")');">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Bem-Vindo a nossa Biblioteca</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#">Detalhes do Curso</a></li>
+                        <li class="active">Comprar Livro</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumb -->
+
+    <!-- Start Venda Livro 
+    ============================================= -->
+    <section class="checkout-area default-padding">
+        <div class="container">
+            <div class="row">
+                <!-- Formulário de 3 etapas -->
+                <div class="col-lg-7">
+                    <form id="checkout-form" asp-action="ComprarCurso" method="post">
+                        <input type="hidden" asp-for="IdCursoFK" />
+                        <input type="hidden" asp-for="Fatura" value="@fatura_save" />
+                        
+                        <!-- Etapa 1: Dados Pessoais -->
+                        <div class="checkout-step" id="step-1">
+                            <h4 class="mb-3">1. Dados Pessoais</h4>
+                            <div class="form-group">
+                                <input asp-for="NomeCliente" class="form-control" placeholder="Nome Completo" required>
+                                <span asp-validation-for="NomeCliente" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <input asp-for="EmailCliente" type="email" class="form-control" placeholder="Email" required>
+                                <span asp-validation-for="EmailCliente" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <input asp-for="TelefoneCliente" type="tel" class="form-control" placeholder="Número de Telefone" required>
+                                <span asp-validation-for="TelefoneCliente" class="text-danger"></span>
+                            </div>
+                            <button type="button" class="btn btn-dark next-step">Próximo</button>
+                        </div>
+
+                       <!-- Etapa 2: Pagamento -->
+                        <div class="checkout-step d-none" id="step-2">
+                            <h4 class="mb-3">2. Forma de Pagamento</h4>
+                            <div class="form-group">
+                                @if (Model.Curso.Tag == "Gratuito")
+                                {
+                                    <select id="tipoPagamento" name="TipoPagamento" class="form-control" required hidden>
+                                        <option value="Gratuito" selected>Gratuito</option>
+                                    </select>
+
+                                    <div class="alert alert-success mb-3" role="alert">
+                                        <p class="mb-0">
+                                            🎉 <strong>Parabéns!</strong> Este curso é <span class="badge bg-success">Gratuito</span>.  
+                                            Aproveite esta oportunidade e desfrute!
+                                        </p>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <select id="tipoPagamento" name="TipoPagamento" class="form-control" required>
+                                        <option disabled selected value="">Escolha uma opção</option>
+                                        <option value="Transferência Bancária">Transferência Bancária</option>
+                                        <option value="Multicaixa Express" disabled>Multicaixa Express</option>
+                                        <option value="Referência" disabled>Referência</option>
+                                    </select>
+                                    <span class="text-danger" id="erroPagamento"></span>
+                                }
+                            </div>
+                            <button type="button" class="btn btn-gray prev-step">Voltar</button>
+                            <button type="button" class="btn btn-dark next-step">Próximo</button>
+                        </div>
+
+
+                       <!-- Etapa 3: Fatura -->
+                        <div class="checkout-step d-none" id="step-3">
+                            <h4 class="mb-3">3. Confirmação</h4>
+                             @if (Model.Curso.Tag == "Gratuito")
+                             {
+
+                                <input type="hidden" asp-for="Status" value="Aprovada" />
+
+                                <div class="alert alert-success">
+                                    <p>
+                                        🎉 <strong>Parabéns!</strong><br>
+                                        Este livro é <span class="badge bg-success">Gratuito</span>, por isso não é necessário realizar nenhum pagamento.
+                                    </p>
+                                    <p>
+                                        Para receber o material, basta <strong>enviar uma solicitação</strong> para o nosso e-mail: 
+                                        <strong>ekitivala.compras@gmail.com</strong> <br>
+                                        ou contactar via WhatsApp pelo número: <strong>923 923 923</strong>.
+                                    </p>
+                                    <p>
+                                        A nossa equipa fará a disponibilização do livro no prazo máximo de <strong>24 horas</strong>.
+                                    </p>
+                                </div>
+
+                            }
+                            else{
+                                
+                                <div class="alert alert-info">
+                                    <p>
+                                        <strong>Importante:</strong><br>
+                                        Após realizar o pagamento, envie o comprovativo para o nosso e-mail: <strong>ekitivala.compras@gmail.com</strong><br>
+                                        Ou entre em contacto via WhatsApp pelo número: <strong>923 923 923</strong>.
+                                    </p>
+                                    <p>
+                                        Após a confirmação do pagamento, a nossa equipa entrará em contacto consigo para disponibilizar o material no prazo máximo de <strong>24 horas</strong>.
+                                    </p>
+                                </div>
+                            }
+
+                                <button type="button" class="btn btn-gray prev-step">Voltar</button>
+                                <button type="submit" class="btn btn-success">Finalizar Compra</button>
+                            </div>
+                            
+
+
+                    </form>
+                </div>
+
+                <!-- Card do Livro -->
+                <div class="col-lg-5">
+                    <div class="card shadow p-3 rounded">
+                        <div class="thumb bg-cover mb-3" style="height: 200px; background-image: url('http://localhost:5043/@Model.Curso.ImagemUrl.Replace("\\", "/")');"></div>
+                        <h5>@Model.Curso.Nome</h5>
+                        <p><strong>Categoria:</strong> @Model.Curso.Tag</p>
+                        <p><strong>Preço:</strong> @Model.Curso.Preco.ToString("N0") KZ</p>
+                        <p><strong>Estudantes:</strong> @Model.Curso.Curtidas</p>
+                        <p><strong>Descrição:</strong> @Model.Curso.Descricao</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Biblioteca -->
+
+<script>
+    const steps = document.querySelectorAll('.checkout-step');
+    let currentStep = 0;
+
+    function showStep(index) {
+        steps.forEach((step, i) => {
+            step.classList.toggle('d-none', i !== index);
+        });
+    }
+
+    document.querySelectorAll('.next-step').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            // Se estiver na etapa 2 (índice 1), aplicar a lógica especial do pagamento
+            if (currentStep === 1) {
+                const tipoPagamento = document.getElementById("tipoPagamento").value;
+                const erroPagamento = document.getElementById("erroPagamento");
+
+                if (!tipoPagamento) {
+                    erroPagamento.textContent = "Selecione uma forma de pagamento.";
+                    return;
+                }
+
+                const fatura = document.querySelector('[name="Fatura"]').value;
+                const nome = document.querySelector('[name="NomeCliente"]').value;
+                const email = document.querySelector('[name="EmailCliente"]').value;
+                const telefone = document.querySelector('[name="TelefoneCliente"]').value;
+                const cursoId = document.querySelector('[name="IdCursoFK"]').value;
+
+
+                 console.log('Valores obtidos:', { fatura, nome, email, telefone, cursoId });
+
+              
+                let url = "";
+                switch (tipoPagamento) {
+                    case "Multicaixa Express":
+                            const url_express = `/Estudante/PagarExpress?fatura=${encodeURIComponent(fatura)}&nome=${encodeURIComponent(nome)}&email=${encodeURIComponent(email)}&telefone=${encodeURIComponent(telefone)}&cursoId=${encodeURIComponent(cursoId)}`;
+                            url = url_express; 
+                        break;
+                    case "Transferência Bancária":
+                            const url_trans = `/Estudante/PagarTransferencia?fatura=${encodeURIComponent(fatura)}&nome=${encodeURIComponent(nome)}&email=${encodeURIComponent(email)}&telefone=${encodeURIComponent(telefone)}&cursoId=${encodeURIComponent(cursoId)}`;
+                            url = url_trans; 
+                        break;
+                    case "Referência": 
+                            const url_ref = `/Estudante/PagarReferencia?fatura=${encodeURIComponent(fatura)}&nome=${encodeURIComponent(nome)}&email=${encodeURIComponent(email)}&telefone=${encodeURIComponent(telefone)}&cursoId=${encodeURIComponent(cursoId)}`;
+                            url = url_ref; 
+                        break;
+                    case "Gratuito": 
+                            const url_gratis = `/Estudante/CursoGratuito?fatura=${encodeURIComponent(fatura)}&nome=${encodeURIComponent(nome)}&email=${encodeURIComponent(email)}&telefone=${encodeURIComponent(telefone)}&cursoId=${encodeURIComponent(cursoId)}`;
+                            url = url_gratis; 
+                        break;
+                    default:
+                        erroPagamento.textContent = "Forma de pagamento inválida.";
+                        return;
+                }
+
+                // Abrir página de fatura na nova aba
+                window.open(url, "_blank");
+            }
+
+            // Avança para o próximo passo
+            if (currentStep < steps.length - 1) {
+                currentStep++;
+                showStep(currentStep);
+            }
+        });
+    });
+
+    document.querySelectorAll('.prev-step').forEach(btn => {
+        btn.addEventListener('click', () => {
+            if (currentStep > 0) {
+                currentStep--;
+                showStep(currentStep);
+            }
+        });
+    });
+
+    // Mostrar a etapa inicial
+    showStep(currentStep);
+</script>
+
+

@@ -1,0 +1,174 @@
+﻿
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- ========== Page Title ========== -->
+    <title>Ekutivala - Projeto Multilingual Universitário</title>
+    <!-- ========== Meta Tags ========== -->
+    <meta name="robots" content="index, follow">  
+    <meta name="description" content="Ekutivala é um projeto académico-social que promove o multilinguismo entre estudantes universitários, com foco no inglês, facilitando o acesso ao emprego e preparando para o mercado de trabalho global.">
+    <meta name="keywords" content="multilinguismo, idiomas, inglês, estudantes universitários, emprego, mercado de trabalho, educação, Angola, Universidade Católica de Angola, Ucaniana, internacionalização, intercâmbio cultural">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta property="og:title" content="Ekutivala - Projeto Multilingual Universitário">
+    <meta property="og:description" content="Ekutivala é um projeto académico-social que promove o multilinguismo entre estudantes universitários, com foco no inglês, facilitando o acesso ao emprego e preparando para o mercado de trabalho global.">
+    <meta property="og:url" content="https://ekutivala.com/"> 
+    <meta property="og:image" content="https://ekutivala.com/assets/img/ekutivala-logo.jpg"> <meta property="og:type" content="website">
+
+    <!-- ========== Favicon ========== -->
+    <link rel="icon" type="image/png" href="~/assets/img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="~/assets/img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="~/assets/img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="~/assets/img/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="~/assets/img/favicon/site.webmanifest" />
+
+    <!-- CSS
+	============================================ -->
+
+    <!-- Google Fonts CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="~/assets_dash/css/plugins/icofont.min.css">
+    <link rel="stylesheet" href="~/assets_dash/css/plugins/flaticon.css">
+    <link rel="stylesheet" href="~/assets_dash/css/plugins/font-awesome.min.css"> 
+
+    <!-- Plugins CSS -->
+    <!-- <link rel="stylesheet" href="~/assets_dash/css/plugins/animate.min.css">
+    <link rel="stylesheet" href="~/assets_dash/css/plugins/swiper-bundle.min.css">
+    <link rel="stylesheet" href="~/assets_dash/css/plugins/magnific-popup.css">
+    <link rel="stylesheet" href="~/assets_dash/css/plugins/nice-select.css">
+    <link rel="stylesheet" href="~/assets_dash/css/plugins/apexcharts.css">
+    <link rel="stylesheet" href="~/assets_dash/css/plugins/jqvmap.min.css"> -->
+
+    <!-- Main Style CSS -->
+    <!-- <link rel="stylesheet" href="~/assets_dash/css/style.css"> -->
+
+
+    <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
+    <link rel="stylesheet" href="~/assets_dash/css/vendor/plugins.min.css">
+    <link rel="stylesheet" href="~/assets_dash/css/style.min.css">
+    <link rel="stylesheet" href="~/css/site.css">
+</head>
+
+<body style="overflow-x: hidden !important;">
+
+    <div class="main-wrapper main-wrapper-02">
+
+        <!-- Login Header Start -->
+        <div class="section login-header">
+            <!-- Login Header Wrapper Start -->
+            <div class="login-header-wrapper navbar navbar-expand">
+
+                <!-- Header Logo Start -->
+                <div class="login-header-logo" style="background-color: #0049fd;">
+                    <a asp-area="" asp-controller="Estudante" asp-action="Index"><img src="../assets/img/favicon/Logo_png.png" alt="Logo" class="logo-img-estudante"></a>
+                </div>
+                <div class="login-header-logo" style="color: white; background-color: #0049fd;">
+                     @Context.Session.GetString("nome")
+                </div>
+                <!-- Header Logo End -->
+
+                <div class="nav admin-tab-menu-centro">
+                    <a asp-area="" asp-controller="Estudante" asp-action="Index" class="active"><i class="icofont-home"></i>Início</a>
+                </div>
+                <div class="nav admin-tab-menu-centro">
+                    <a asp-area="" asp-controller="Estudante" asp-action="ListaMeusCursos" class="active"><i class="icofont-video"></i>Meus Cursos</a>
+                </div>
+
+
+                <!-- Header Item Start -->
+                <div class="login-header-action ml-auto" style="display: flex; margin-left: auto;">
+                    
+                    <div class="dropdown">
+                        <button class="action notification" data-bs-toggle="dropdown">
+                            <i class="flaticon-notification"></i>
+                            <span class="active"></span>
+                        </button>
+                        <div class="dropdown-menu dropdown-notification">
+                            <ul class="notification-items-list">
+                                <li class="notification-item">
+                                    <span class="notify-icon bg-success text-white"><i class="icofont-ui-user"></i></span>
+                                    <div class="dropdown-body">
+                                        <a href="#">
+                                            <p><strong>Martin</strong> has added a <strong>customer</strong> Successfully
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <span class="notify-time">3:20 am</span>
+                                </li>
+                                <li class="notification-item">
+                                    <span class="notify-icon bg-success text-white"><i class="icofont-shopping-cart"></i></span>
+                                    <div class="dropdown-body">
+                                        <a href="#">
+                                            <p><strong>Jennifer</strong> purchased Light Dashboard 2.0.</p>
+                                        </a>
+                                    </div>
+                                    <span class="notify-time">3:20 am</span>
+                                </li>
+                               
+                            </ul>
+                            <a class="all-notification" asp-area="" asp-controller="Estudante" asp-action="ListaNotificacao">Ver todas as notificações <i class="icofont-simple-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="action more" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="" asp-area="" asp-controller="Estudante" asp-action="Perfil"><i class="icofont-user"></i> Perfil</a></li>
+                            <li><a class="" asp-area="" asp-controller="Estudante" asp-action="Logout"><i class="icofont-logout"></i> Sair</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Header Item End -->
+
+            </div>
+            <!-- Login Header Wrapper End -->
+        </div>
+        <!-- Login Header End -->
+
+        @RenderBody()
+        
+    </div>
+
+    <!-- JS
+    ============================================ -->
+
+    <!-- Modernizer & jQuery JS -->
+    <script src="~/assets_dash/js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="~/assets_dash/js/vendor/jquery-3.5.1.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <!-- <script src="~/assets_dash/js/plugins/popper.min.js"></script>
+    <script src="~/assets_dash/js/plugins/bootstrap.min.js"></script> -->
+
+    <!-- Plugins JS -->
+    <!-- <script src="~/assets_dash/js/plugins/swiper-bundle.min.js"></script>
+    <script src="~/assets_dash/js/plugins/jquery.magnific-popup.min.js"></script>
+    <script src="~/assets_dash/js/plugins/video-playlist.js"></script>
+    <script src="~/assets_dash/js/plugins/jquery.nice-select.min.js"></script>
+    <script src="~/assets_dash/js/plugins/ajax-contact.js"></script> -->
+
+    <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
+    <script src="~/assets_dash/js/plugins.min.js"></script>
+
+
+    <!-- Main JS -->
+    <script src="~/assets_dash/js/main.js"></script>
+
+    <!-- Charts JS -->
+    <script src="~/assets_dash/js/plugins/jquery.vmap.min.js"></script>
+    <script src="~/assets_dash/js/plugins/jquery.vmap.world.js"></script>
+    <script src="~/assets_dash/js/plugins/jquery.vmap.sampledata.js"></script>
+    <script src="~/assets_dash/js/student-map.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

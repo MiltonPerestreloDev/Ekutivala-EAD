@@ -1,0 +1,58 @@
+@{
+    ViewData["Title"] = "Upload da Capa do Livro";
+    Layout = "_Dashboard_Layout";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h4>Upload da Capa do Livro</h4>
+                </div>
+                <div class="card-body">
+                    @if (TempData["SuccessMessage"] != null)
+                    {
+                        <div class="alert alert-success">
+                            @TempData["SuccessMessage"]
+                        </div>
+                    }
+                    @if (TempData["ErrorMessage"] != null)
+                    {
+                        <div class="alert alert-danger">
+                            @TempData["ErrorMessage"]
+                        </div>
+                    }
+                    
+                    <form asp-action="UploadCapa" method="post" enctype="multipart/form-data">
+                        <div class="form-group mb-3">
+                            <label for="file" class="form-label">Selecione a imagem da capa:</label>
+                            <input type="file" name="file" id="file" class="form-control" accept="image/*" required />
+                            <small class="form-text text-muted">Formatos aceitos: JPEG, PNG, GIF (Máx. 5MB)</small>
+                        </div>
+                        
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-upload"></i> Enviar Capa
+                            </button>
+                            @if (TempData["CapaPath"] != null)
+                            {
+                                <a href="@Url.Action("Cadastrar_Livro")" class="btn btn-success">
+                                    <i class="fas fa-book"></i> Continuar para Cadastro do Livro
+                                </a>
+                            }
+                        </div>
+                    </form>
+                    
+                    @if (TempData["CapaPath"] != null)
+                    {
+                        <div class="mt-4">
+                            <h5>Pré-visualização:</h5>
+                            <img src="/@TempData["CapaPath"]" alt="Pré-visualização da capa" class="img-thumbnail" style="max-height: 200px;" />
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,284 @@
+﻿@using Microsoft.AspNetCore.Http;
+@model ListaCursosViewModel;
+
+@{
+    ViewData["Title"] = "";
+    Layout = "_LayoutEstudante";
+}
+<style>
+    .course-card {
+        background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+        border: 1px solid #e9ecef;
+        transition: all 0.3s ease;
+        height: 100%;
+    }
+
+    .course-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
+        border-color: #007bff;
+    }
+
+    .hover-primary:hover {
+        color: #007bff !important;
+    }
+
+    .course-title {
+        font-size: 1.25rem;
+        line-height: 1.4;
+        min-height: 3.5rem;
+    }
+
+    .course-description {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .line-clamp-3 {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .course-info i {
+        width: 16px;
+        text-align: center;
+    }
+
+    .btn {
+        transition: all 0.3s ease;
+    }
+
+    .btn:hover:not(:disabled) {
+        transform: translateY(-2px);
+    }
+
+    .badge {
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+
+    /* Responsividade */
+    @@media (max-width: 768px) {
+        .course-card {
+            padding: 1.5rem !important;
+        }
+        
+        .course-title {
+            font-size: 1.1rem;
+        }
+        
+        .course-header {
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .course-image {
+            align-self: flex-end;
+        }
+    }
+
+    .form-control{
+        background-color: #ecf1ff !important;
+    }
+</style>
+ <!-- Courses Admin Start -->
+    <div class="section overflow-hidden position-relative" id="wrapper">
+
+        <div class="page-content-wrapper py-0">
+
+            <!-- Admin Tab Menu Start -->
+            <div class="nav flex-column admin-tab-menu">
+                <a asp-area="" asp-controller="Estudante" asp-action="Index" >Inicio</a>
+                <a asp-area="" asp-controller="Estudante" asp-action="Perfil" >Perfil</a>
+                <a asp-area="" asp-controller="Estudante" asp-action="ListaNotificacao">Notificações</a>
+                <a asp-area="" asp-controller="Estudante" asp-action="ListaMeusCursos" class="active">Meus Cursos</a>
+                <a asp-area="" asp-controller="Estudante" asp-action="Logout">Sair</a>
+            </div>
+            <!-- Admin Tab Menu End -->
+
+            <div class="main-content-wrapper pb-0">
+                <div class="container-fluid">
+
+                    <!-- Admin Top Bar Start -->
+                    <div class="admin-top-bar flex-wrap">
+
+                        <div class="top-bar-filter">
+                            <h3> Os Meus Cursos</h3>
+                        </div>
+                    </div>
+                    <!-- Admin Top Bar End -->
+
+                    <!-- Question & Answer Start -->
+                    <div class="question-answer">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <!-- Answer User List Start -->
+                                <div class="answer-user-list" style="height: 90vw;">
+                                    
+                                    <!-- Blog Wrapper Start -->
+                                    <div class="blog-wrapper">
+                                        @if (Model.Cursos.Any())
+                                        {
+                                            <div class="row">
+                                                @foreach (var curso in Model.Cursos)
+                                                {
+                                                    // Encontra a venda correspondente a este curso
+                                                    var vendaCurso = Model.VendasCursos.FirstOrDefault(v => v.IdCursoFK == curso.Id);
+                                                    <div class="col-md-6 mb-4">
+                                                        <div class="course-card shadow-lg p-4 rounded-3 border-0">
+                                                            <!-- Header com Tag e Imagem (se houver) -->
+                                                            <div class="course-header d-flex justify-content-between align-items-start mb-3">
+                                                                <span class="badge bg-primary px-3 py-2 rounded-pill fs-6">@curso.Tag</span>
+                                                                @if (!string.IsNullOrEmpty(curso.ImagemUrl))
+                                                                {
+                                                                    <img src="@curso.ImagemUrl" alt="@curso.Nome" class="course-image" style="width: 60px; height: 60px; object-fit: cover; border-radius: 8px;">
+                                                                }
+                                                            </div>
+
+                                                            <!-- Conteúdo Principal -->
+                                                            <div class="course-content">
+                                                                <!-- Título -->
+                                                                <h5 class="course-title fw-bold text-dark mb-3">
+                                                                    <a href="@curso.CursoUrl" class="text-decoration-none text-dark hover-primary">@curso.Nome</a>
+                                                                </h5>
+
+                                                                <!-- Descrição -->
+                                                                <p class="course-description text-muted mb-3 line-clamp-3">@curso.Descricao</p>
+
+                                                                <!-- Informações do Curso -->
+                                                                <div class="course-info mb-3">
+                                                                    <div class="d-flex align-items-center mb-2">
+                                                                        <i class="fas fa-chalkboard-teacher text-primary me-2"></i>
+                                                                        <span class="text-muted">@curso.QuantidadeProfessores Professor@(curso.QuantidadeProfessores > 1 ? "es" : "")</span>
+                                                                    </div>
+                                                                    
+                                                                    <div class="d-flex justify-content-between text-muted">
+                                                                        <div class="d-flex align-items-center">
+                                                                            <i class="fas fa-calendar-alt me-2"></i>
+                                                                            <small>@curso.DataPublicacao.ToString("dd MMM, yyyy")</small>
+                                                                        </div>
+                                                                        <div class="d-flex align-items-center">
+                                                                            <i class="icofont-user text-success me-2"></i>
+                                                                            <small>@curso.Curtidas+</small>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <!-- Botão de Ação -->
+                                                                <div class="course-action mt-4">
+                                                                    @if (vendaCurso != null)
+                                                                    {
+                                                                        <!-- VERIFICAÇÃO CORRETA DO STATUS -->
+                                                                        @if (vendaCurso.Status.ToUpper() == "PENDENTE")
+                                                                        {
+                                                                            <button class="btn btn-warning w-100 py-2 rounded-pill fw-semibold" disabled>
+                                                                                <i class="icofont-clock-time me-2"></i> Pagamento Pendente
+                                                                            </button>
+                                                                        }
+                                                                        else if (vendaCurso.Status.ToUpper() == "APROVADA")
+                                                                        {
+                                                                            <a asp-area="" asp-controller="Estudante" asp-action="@curso.CursoUrl"  class="btn btn-success w-100 py-2 rounded-pill fw-semibold">
+                                                                                <i class="icofont-play me-2"></i> Acessar Curso
+                                                                            </a>
+                                                                        }
+                                                                        else if (vendaCurso.Status.ToUpper() == "CANCELADA")
+                                                                        {
+                                                                            <button class="btn btn-danger w-100 py-2 rounded-pill fw-semibold" disabled>
+                                                                                <i class="icofont-close me-2"></i> Compra Cancelada
+                                                                            </button>
+                                                                        }
+                                                                        else
+                                                                        {
+                                                                            <button class="btn btn-secondary w-100 py-2 rounded-pill fw-semibold" disabled>
+                                                                                <i class="icofont-info me-2"></i> @vendaCurso.Status
+                                                                            </button>
+                                                                        }
+
+                                                                        <!-- Info de compra -->
+                                                                        <div class="text-center mt-2">
+                                                                            <small class="text-muted">
+                                                                                Compra: @vendaCurso.DataCadastro.ToString("dd/MM/yyyy")
+                                                                            </small>
+                                                                        </div>
+                                                                    }
+                                                                    else
+                                                                    {
+                                                                        <a asp-area="" asp-controller="Estudante" asp-action="ComprarCurso" 
+                                                                        asp-route-idCurso="@curso.Id" class="btn btn-primary w-100 py-2 rounded-pill fw-semibold">
+                                                                            <i class="fas fa-shopping-cart me-2"></i> Comprar Curso
+                                                                        </a>
+                                                                    }
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                }
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <div class="alert alert-info">
+                                                Nenhum curso encontrado.
+                                            </div>
+                                        }
+                                    </div>
+                                    <!-- Blog Wrapper End -->
+
+                                    <!-- Page Pagination Start -->
+                                    @if (Model.TotalPaginas > 1)
+                                    {
+                                        <nav aria-label="Page navigation">
+                                            <ul class="pagination justify-content-center mt-4">
+                                                <!-- Botão anterior -->
+                                                <li class="page-item @(Model.PaginaAtual == 1 ? "disabled" : "")">
+                                                    <a class="page-link" href="@Url.Action("Index", new { termoPesquisa = Model.TermoPesquisa, pagina = Model.PaginaAtual - 1 })">
+                                                        <i class="icofont-rounded-left"></i>
+                                                    </a>
+                                                </li>
+
+                                                <!-- Números de páginas -->
+                                                @for (int i = 1; i <= Model.TotalPaginas; i++)
+                                                {
+                                                    <li class="page-item @(i == Model.PaginaAtual ? "active" : "")">
+                                                        <a class="page-link" href="@Url.Action("Index", new { termoPesquisa = Model.TermoPesquisa, pagina = i })">@i</a>
+                                                    </li>
+                                                }
+
+                                                <!-- Botão próximo -->
+                                                <li class="page-item @(Model.PaginaAtual == Model.TotalPaginas ? "disabled" : "")">
+                                                    <a class="page-link" href="@Url.Action("Index", new { termoPesquisa = Model.TermoPesquisa, pagina = Model.PaginaAtual + 1 })">
+                                                        <i class="icofont-rounded-right"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    }
+                                    <!-- Page Pagination End -->
+
+                                </div>
+                                <!-- Answer User List End -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Question & Answer End -->
+
+
+                </div>
+            </div>
+                
+
+    </div>
+</div>
+
+        <!--Back To Start-->
+        <a href="#" class="back-to-top">
+            <i class="icofont-simple-up"></i>
+        </a>
+        <!--Back To End-->
+        @section Scripts {
+            
+        }

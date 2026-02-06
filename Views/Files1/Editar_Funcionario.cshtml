@@ -1,0 +1,76 @@
+@model FuncionarioModel
+@using Microsoft.AspNetCore.Http;
+
+@{
+    ViewData["Title"] = "Ekutivala";
+    ViewContext.RouteData.Values["action"] = "Index";
+    Layout = "_Dashboard_Layout";
+}
+
+<main>
+    <div class="container-fluid px-4">
+        <h1 class="mt-4">Editar Funcionário</h1>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-user-edit me-1"></i>
+                Atualizar Informações do Funcionário
+            </div>
+            <div class="card-body">
+                <form asp-action="Editar_Funcionario" asp-controller="Files1" method="post">
+                    <input asp-for="IdFunc" type="hidden" />
+                    <input asp-for="SenhaFunc" type="hidden" />
+                    <input asp-for="DataCadastroFunc" type="hidden" />
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group mb-3">
+                                <label asp-for="NomeFunc" class="form-label">Nome Completo </label>
+                                <input asp-for="NomeFunc" class="form-control" required />
+                                <span asp-validation-for="NomeFunc" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label asp-for="EmailFunc" class="form-label">E-mail</label>
+                                <input asp-for="EmailFunc" class="form-control" type="email" required />
+                                <span asp-validation-for="EmailFunc" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group mb-3">
+                                <label asp-for="StatusFunc" class="form-label">Status</label>
+                                <select asp-for="StatusFunc" class="form-select" required>
+                                    <option value="ATIVO">Ativo</option>
+                                    <option value="INATIVO">Inativo</option>
+                                    <option value="BLOQUEADO">Bloqueado</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label asp-for="AcessoFunc" class="form-label">Nível de Acesso</label>
+                                <select asp-for="AcessoFunc" class="form-select" required>
+                                    <option value="">Selecione...</option>
+                                    <option value="A">A - Administrador</option>
+                                    <option value="B">B - Gestor</option>
+                                    <option value="C">C - Padrão</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+                        <a asp-action="Listar_Funcionarios" class="btn btn-secondary me-md-2">
+                            <i class="fas fa-arrow-left"></i> Voltar
+                        </a>
+                        <button type="submit" class="btn btn-success">
+                            <i class="fas fa-save"></i> Atualizar Funcionário
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+

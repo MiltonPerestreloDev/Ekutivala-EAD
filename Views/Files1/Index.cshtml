@@ -1,0 +1,85 @@
+﻿@using Microsoft.AspNetCore.Http;
+
+@{
+    ViewData["Title"] = "Ekutivala";
+    ViewContext.RouteData.Values["action"] = "Index";
+    Layout = "_Dashboard_Layout";
+}
+
+
+<main>
+    <div class="container-fluid px-4">
+        <h1 class="mt-4">Funcionalidades principais</h1>
+        <div class="row">
+            <div class="col-xl-3 col-md-6">
+                <div class="card bg-dark text-white mb-4">
+                    <div class="card-body">
+                        <i class="fas fa-user me-2"></i> Gerir Estudantes
+                    </div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <a class="small text-white stretched-link" 
+                        asp-area="" asp-controller="Files1" asp-action="Listar_Estudantes">Aceder</a>
+                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                    </div>
+                </div>
+            </div>
+
+             @if (Context.Session.GetString("acessoFunc") == "A")
+            {
+                <div class="col-xl-3 col-md-6">
+                    <div class="card bg-dark text-white mb-4">
+                        <div class="card-body">
+                            <i class="fas fa-user-secret me-2"></i> Gerir Funcionários
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link" 
+                            asp-area="" asp-controller="Files1" asp-action="Listar_Funcionarios">Aceder</a>
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+            }
+
+            <div class="col-xl-3 col-md-6">
+                <div class="card bg-dark text-white mb-4">
+                    <div class="card-body">
+                        <i class="fas fa-file-alt me-2"></i> Gerir Arquivos
+                    </div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <a class="small text-white stretched-link"
+                        asp-area="" asp-controller="Files1" asp-action="Listar_Arquivos">Aceder</a>
+                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6">
+                <div class="card bg-dark text-white mb-4">
+                    <div class="card-body">
+                        <i class="fas fa-book me-2"></i> Vendas Livros
+                    </div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <a class="small text-white stretched-link"
+                        asp-area="" asp-controller="Files1" asp-action="Listar_VendasLivros">Aceder</a>
+                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6">
+                <div class="card bg-dark text-white mb-4">
+                    <div class="card-body">
+                        <i class="fas fa-book me-2"></i> Vendas Cursos
+                    </div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <a class="small text-white stretched-link"
+                        asp-area="" asp-controller="Files1" asp-action="Listar_VendasCursos">Aceder</a>
+                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+

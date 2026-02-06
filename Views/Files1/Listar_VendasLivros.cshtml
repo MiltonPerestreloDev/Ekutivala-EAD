@@ -1,0 +1,116 @@
+@model IEnumerable<VendaLivroModel>
+@using Microsoft.AspNetCore.Http
+
+@{
+    ViewData["Title"] = "Vendas de Livros";
+    Layout = "_Dashboard_Layout";
+}
+
+<main>
+    <div class="container-fluid px-4">
+        <h1 class="mt-4">Vendas de Livros</h1>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-book me-1"></i>
+                Lista de Vendas de Livros
+            </div>
+            <div class="card-body">
+                <table id="VendasLivro" class="table table-striped table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Cliente</th>
+                            <th>E-mail</th>
+                            <th>Telefone</th>
+                            <th>Livro</th>
+                            <th>Tipo Pagamento</th>
+                            <th>Fatura</th>
+                            <th>Status</th>
+                            <th>Data Cadastro</th>
+                            <th>Operações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var venda in Model)
+                        {
+                            <tr>
+                                <td>@venda.IdVenda</td>
+                                <td>@venda.NomeCliente</td>
+                                <td>@venda.EmailCliente</td>
+                                <td>@venda.TelefoneCliente</td>
+                                <td>
+                                    @if (venda.Livro != null)
+                                    {
+                                        <span>@venda.Livro.Titulo</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted">Livro não encontrado</span>
+                                    }
+                                </td>
+                                <td>@venda.TipoPagamento</td>
+                                <td>@venda.Fatura</td>
+                                <td>
+                                    <span class="badge 
+                                        @(venda.Status == "Aprovada" ? "bg-success" : 
+                                          venda.Status == "Pendente" ? "bg-warning" : 
+                                          "bg-danger")">
+                                        @venda.Status
+                                    </span>
+                                </td>
+                                <td>@venda.DataCadastro.ToString("dd/MM/yyyy HH:mm")</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <a asp-action="Editar_VendaLivro" asp-route-id="@venda.IdVenda" 
+                                            class="btn btn-sm btn-warning">
+                                            <i class="fas fa-edit"></i> Editar
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+@section Scripts {
+    <script>
+        $(document).ready(function (){
+            $('#VendasLivro').DataTable({
+                "language": {
+                    "emptyTable": "Nenhuma venda cadastrado",
+                    "lengthMenu": "_MENU_ resultados por página",
+                    "info": "Mostrando _START_ até _END_ de _TOTAL_ venda",
+                    "infoEmpty": "Mostrando 0 até 0 de 0 vendas",
+                    "infoFiltered": "(Filtrados de _MAX_ vendas)",
+                    "infoPostFix": "",
+                    "infoThousands": ".",
+                    "loadingRecords": "Carregando...",
+                    "processing": "Processando...",
+                    "zeroRecords": "Nenhuma venda encontrado",
+                    "search": "Pesquisar:",
+                    "paginate": {
+                        "next": "Próximo",
+                        "previous": "Anterior",
+                        "first": "Primeiro",
+                        "last": "Último"
+                    },
+                    "aria": {
+                        "sortAscending": "Ordenar coluna ascendente",
+                        "sortDescending": "Ordenar coluna descendente"
+                    }
+                },
+                "columnDefs": [
+                    { "orderable": false, "targets": [6] } // Desabilita ordenação na coluna de operações
+                ],
+                "order": [[5, "desc"]] // Ordena por data de cadastro (decrescente)
+            });
+        });
+    </script>
+
+}
